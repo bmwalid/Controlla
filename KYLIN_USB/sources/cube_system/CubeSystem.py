@@ -14,7 +14,7 @@ from KYLIN_USB.sources.run.global_variables import AUTH
 from KYLIN_USB.sources.tests.generate_model import HOSTNAME, HEADERS
 
 
-class cube_system(object):
+class CubeSystem(object):
 
     #TODO : the right relative path
     cubes_json_folder=r"..\sources\kylin\cubes"
@@ -454,4 +454,5 @@ class Model(object):
         self.fact_table = fact_table
         self.owner = owner
         self.name_model = name_model
+
 

@@ -6,13 +6,25 @@ import unittest
 # use them in parallel to launch API calls
 # we have chosen threads over processes because they are performant with IO operations (API calls)
 # import this lib
+from os import listdir
+from os.path import join, isfile
+
 import requests
+
+from KYLIN_USB.sources.cube_system.CubeSystem import CubeSystem
+
 AUTH=("admin","KYLIN")
 HEADERS = {'Content-type': 'application/json'}
 HOSTNAME = "127.0.0.1"
 class generate_model(unittest.TestCase):
     path=r"template_model_envelope.json"
     path_2=r"model_json.json"
+    def test_open_folder(self):
+        c=CubeSystem()
+        models_files_json = [f for f in listdir(c.models_json_folder) if isfile(join(c.models_json_folder, f))]
+
+
+
 
     def edit_model(self, json_path_receive,
                     json_path_send=r"template_model_envelope.json"
@@ -73,8 +85,6 @@ class generate_model(unittest.TestCase):
 
 
 
-    def test(self):
-        self.load_new_model(self.path_2)
 
 
 if __name__ == '__main__':
