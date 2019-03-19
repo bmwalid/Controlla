@@ -1,0 +1,81 @@
+{
+  "modelName": "kylin_model",
+  "modelDescData":"{
+  \"name\": \"MODEL_MQB_OPV_MAG\",
+  \"owner\": \"ADMIN\",
+  \"is_draft\": false,
+  \"description\": \"\",
+  \"fact_table\": \"KYLIN_USB_MQB.KYL_MQB_OPV\",
+  \"lookups\": [
+    {
+      \"table\": \"KYLIN_USB_MQB.MAGASIN_HIERARCHIE_MODELE\",
+      \"kind\": \"LOOKUP\",
+      \"alias\": \"MAGASIN_HIERARCHIE_MODELE\",
+      \"join\": {
+        \"type\": \"inner\",
+        \"primary_key\": [
+          \"MAGASIN_HIERARCHIE_MODELE.FST_MODELE_R3\"
+        ],
+        \"foreign_key\": [
+          \"KYL_MQB_OPV.MDL_NUM_MODEL_R3\"
+        ]
+      }
+    }
+  ],
+  \"dimensions\": [
+    {
+      \"table\": \"KYL_MQB_OPV\",
+      \"columns\": [
+        \"MDL_NUM_MODEL_R3\",
+        \"COUNTRY_REFERENCE\",
+        \"NOTE_BIS\",
+        \"COLLABORATOR\",
+        \"DAY_PUBLISHED_AT\",
+        \"WEEK_PUBLISHED_AT\",
+        \"MONTH_PUBLISHED_AT\",
+        \"YEAR_PUBLISHED_AT\",
+        \"PURCH_ORG\",
+        \"PURCH_ORG_TEXT\",
+        \"SALES_ORG\",
+        \"SALES_ORG_TEXT\",
+        \"VENDOR_ID\",
+        \"SUBCONTRACTOR_ID\"
+      ]
+    },
+    {
+      \"table\": \"MAGASIN_HIERARCHIE_MODELE\",
+      \"columns\": [
+        \"FST_MODELE_R3\",
+        \"ELN_NUM_ELT_NIVEAU_FAM\",
+        \"ELN_NUM_ELT_NIVEAU_SSR\",
+        \"ELN_NUM_ELT_NIVEAU_RAY\",
+        \"ELN_NUM_ELT_NIVEAU_UNI\",
+        \"LIBELLE_MODELE\",
+        \"LIBELLE_FAMILLE\",
+        \"LIBELLE_SOUS_RAYON\",
+        \"LIBELLE_RAYON\",
+        \"LIBELLE_UNIVERS\"
+      ]
+    }
+  ],
+  \"metrics\": [
+    \"KYL_MQB_OPV.NOTE\"
+  ],
+  \"filter_condition\": \"\",
+  \"partition_desc\": {
+    \"partition_date_column\": \"KYL_MQB_OPV.DAY_PUBLISHED_AT\",
+    \"partition_time_column\": null,
+    \"partition_date_start\": 0,
+    \"partition_date_format\": \"yyyy-MM-dd\",
+    \"partition_time_format\": \"HH:mm:ss\",
+    \"partition_type\": \"APPEND\",
+    \"partition_condition_builder\": \"org.apache.kylin.metadata.model.PartitionDesc$DefaultPartitionConditionBuilder\"
+  },
+  \"capacity\": \"MEDIUM\"
+}",
+  "successful": true,
+  "message": null,
+  "project": "prod_mqb_usb",
+  "ccInCheck": null,
+  "seekingExprAdvice": false
+}

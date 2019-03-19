@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b013e589-350b-4869-ad28-e5d562d18ccf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/sources/spark/load/facts/001-f_transaction_detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/spark/load/facts/001-f_transaction_detail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/spark/load/sources/033-mds_elt_gestion_echange.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/spark/load/sources/033-mds_elt_gestion_echange.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/spark/load/transform/etapes_de_vie.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/spark/load/transform/etapes_de_vie.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/spark/load/sources/003-d_sku_h.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+              <folding>
+                <element signature="e#19#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_nwt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/spark/confs/default_spark_conf.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/spark/load/transform/etapes_de_vie.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#19#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/run/sparklers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/run/create_partitioned_tables.hql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_vte.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="67" />
+              <folding>
+                <element signature="e#19#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/spark/load/sources/033-mds_elt_gestion_echange.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+              <folding>
+                <element signature="e#19#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/spark/load/hierarchies/hierarchies.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#19#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gv</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1d1cd247-dc98-4279-8e20-21176cf68128" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/028-mds_val_grille.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/027-mds_declinaison_article.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/023-process_type_label.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/022-mds_element_gestion.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/021-mds_libelle_traduction.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/020-mds_elt_niveau.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/019-mds_libelle_modele.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/018-mds_rattachement_modele.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/012-mds_codification_fournisseur.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/011-mds_item_and_model_production_data.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/010-mds_detail_elt_gestion.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/009-wrf1.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/008-purchases_organizations_texts.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/007-sales_organizations_texts.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/006-t001w.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/005-language_defloc.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/002-d_business_unit.py" />
+        <option value="$PROJECT_DIR$/sources/run/global_variables.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/034-dk_product.py" />
+        <option value="$PROJECT_DIR$/sources/kylin/models/model_mqb_opv_dmi.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/models/model_mqb_opv_dpp.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/models/model_mqb_opv_mag.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/models/model_mqb_opv_nat.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/models/model_mqb_opv_pdt.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_dmi.json" />
+        <option value="$PROJECT_DIR$/sources/install/hbase-site.xml" />
+        <option value="$PROJECT_DIR$/sources/install/core-site.xml" />
+        <option value="$PROJECT_DIR$/sources/install/install_compute.sh" />
+        <option value="$PROJECT_DIR$/sources/install/execute.sh" />
+        <option value="$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_dpp.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_mag.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_nat.json" />
+        <option value="$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_pdt.json" />
+        <option value="$PROJECT_DIR$/sources/run/brain.py" />
+        <option value="$PROJECT_DIR$/notes_de_developpement.txt" />
+        <option value="$PROJECT_DIR$/sources/spark/load/transform/flat_structure.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/transform/t001w_finale.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_nwt.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/029-quotas_fournisseurs.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/facts/014-opv_review_review.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_opv.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/facts/024-nwt_itv_def_loc.py" />
+        <option value="$PROJECT_DIR$/sources/run/sparklers.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/dpp/dpp_hierarchie_article.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/hierarchies/hierarchies.py" />
+        <option value="$PROJECT_DIR$/sources/spark/confs/default_spark_conf.txt" />
+        <option value="$PROJECT_DIR$/sources/run/create_partitioned_tables.hql" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/003-d_sku_h.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/facts/001-f_transaction_detail.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/transform/etapes_de_vie.py" />
+        <option value="$PROJECT_DIR$/sources/spark/load/sources/033-mds_elt_gestion_echange.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2553" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="install" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="run" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="confs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+              <item name="cubes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+              <item name="dpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+              <item name="facts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+              <item name="hierarchies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KYLIN_USB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KYLIN_USB" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+              <item name="transform" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\PycharmProjects\KYLIN_USB\sources\kylin\projet" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="KYLIN_USB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b013e589-350b-4869-ad28-e5d562d18ccf" name="Default Changelist" comment="" />
+      <created>1552047278337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552047278337</updated>
+      <workItem from="1552047281493" duration="941000" />
+      <workItem from="1552048258645" duration="2201000" />
+      <workItem from="1552050833804" duration="746000" />
+      <workItem from="1552052825211" duration="1378000" />
+      <workItem from="1552056412494" duration="44527000" />
+      <workItem from="1552473911775" duration="12781000" />
+      <workItem from="1552550492468" duration="16547000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="79121000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23081024" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.6178038" visible="true" weight="0.28602383" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49946696" weight="0.32502708" />
+      <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.4989339" weight="0.5287107" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" side_tool="true" weight="0.32995737" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/KYLIN_USB" />
+      <path value="$PROJECT_DIR$/" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sources/spark/load/facts/004-stc_articles_defectueux.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sources/kylin/models/model_mqb_opv_nat.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/models/model_mqb_vte_dmi.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/models/model_mqb_opv_pdt.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/install/core-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/install/hbase-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_dmi.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4946">
+          <caret line="411" column="7" lean-forward="true" selection-start-line="411" selection-start-column="7" selection-end-line="411" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_dpp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5815">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_mag.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="404" column="43" lean-forward="true" selection-start-line="404" selection-start-column="43" selection-end-line="404" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_nat.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="434" column="39" lean-forward="true" selection-start-line="434" selection-start-column="39" selection-end-line="434" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_opv_pdt.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="409" column="11" lean-forward="true" selection-start-line="409" selection-start-column="11" selection-end-line="409" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_vte_dmi.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2261" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_def_pdt.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/cubes/cube_mqb_nwt_dmi.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3332" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/projet/projet.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin/projet/cardinality.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/run/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/sources/run/global_variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cube_system/CubeSystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="196" column="26" lean-forward="true" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/kylin_client/KylinClient.py" />
+    <entry file="file://$PROJECT_DIR$/sources/kylin_client/script_logger.py" />
+    <entry file="file://$PROJECT_DIR$/sources/kylin_client/global_variables.py" />
+    <entry file="file://$PROJECT_DIR$/sources/run/cubes.py" />
+    <entry file="file://$PROJECT_DIR$/sources/run/brain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes_de_developpement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/transform/flat_structure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3452">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#20#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/transform/t001w_finale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#20#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_def.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="7" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/sources/029-quotas_fournisseurs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_opv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#20#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/004-stc_articles_defectueux.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/014-opv_review_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="e#19#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/015-nwt_intervention.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/017-nwt_itv_spare_parts.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/024-nwt_itv_def_loc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/025-nwt_itv_event.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/install/install_compute.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3383">
+          <caret line="199" selection-start-line="199" selection-end-line="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/install/execute.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/016-nwt_itv_service.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/026-nwt_itv_model.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/run/sparklers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_vte.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="67" />
+          <folding>
+            <element signature="e#19#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/dpp/dpp_hierarchie_modele.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/dpp/dpp_hierarchie_article.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="95" column="36" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/cubes/kyl_mqb_nwt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/confs/default_spark_conf.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/hierarchies/hierarchies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#19#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/run/create_partitioned_tables.hql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/facts/001-f_transaction_detail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#19#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/sources/003-d_sku_h.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding>
+            <element signature="e#19#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/transform/etapes_de_vie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#19#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/spark/load/sources/033-mds_elt_gestion_echange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding>
+            <element signature="e#19#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

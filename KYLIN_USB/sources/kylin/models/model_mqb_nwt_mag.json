@@ -1,0 +1,79 @@
+"{
+  \"name\": \"MODEL_MQB_NWT_MAG\",
+  \"owner\": \"ADMIN\",
+  \"is_draft\": false,
+  \"description\": \"\",
+  \"fact_table\": \"KYLIN_USB_MQB.KYL_MQB_NWT\",
+  \"lookups\": [
+    {
+      \"table\": \"KYLIN_USB_MQB.MAGASIN_HIERARCHIE_ARTICLE\",
+      \"kind\": \"LOOKUP\",
+      \"alias\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"join\": {
+        \"type\": \"inner\",
+        \"primary_key\": [
+          \"MAGASIN_HIERARCHIE_ARTICLE.FST_ARTICLE_R3\",
+          \"MAGASIN_HIERARCHIE_ARTICLE.FST_MODELE_R3\"
+        ],
+        \"foreign_key\": [
+          \"KYL_MQB_NWT.MATERIAL\",
+          \"KYL_MQB_NWT.MDL_NUM_MODEL_R3\"
+        ]
+      }
+    }
+  ],
+  \"dimensions\": [
+    {
+      \"table\": \"KYL_MQB_NWT\",
+      \"columns\": [
+        \"REPAIR_DETAIL\",
+        \"MATERIAL\",
+        \"CATEG\",
+        \"DEFAUT\",
+        \"LOC_LOCAL\",
+        \"TYPECH\",
+        \"DATEVA\",
+        \"TIERS\",
+        \"PURCH_ORG\",
+        \"VENDOR_ID\",
+        \"CURRENCY_ID\",
+        \"MDL_NUM_MODEL_R3\",
+        \"SUBCONTRACTOR_ID\",
+        \"YEAR_DATEVA\",
+        \"MONTH_DATEVA\",
+        \"WEEK_DATEVA\"
+      ]
+    },
+    {
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"columns\": [
+        \"FST_ARTICLE_R3\",
+        \"FST_MODELE_R3\",
+        \"ELN_NUM_ELT_NIVEAU_FAM\",
+        \"ELN_NUM_ELT_NIVEAU_SSR\",
+        \"ELN_NUM_ELT_NIVEAU_RAY\",
+        \"ELN_NUM_ELT_NIVEAU_UNI\",
+        \"LIBELLE_MODELE\",
+        \"LIBELLE_FAMILLE\",
+        \"LIBELLE_SOUS_RAYON\",
+        \"LIBELLE_RAYON\",
+        \"LIBELLE_UNIVERS\"
+      ]
+    }
+  ],
+  \"metrics\": [
+    \"KYL_MQB_NWT.QTE\",
+    \"KYL_MQB_NWT.PRICE_CESSION\"
+  ],
+  \"filter_condition\": \"\",
+  \"partition_desc\": {
+    \"partition_date_column\": \"KYL_MQB_NWT.DATEVA\",
+    \"partition_time_column\": null,
+    \"partition_date_start\": 0,
+    \"partition_date_format\": \"yyyy-MM-dd\",
+    \"partition_time_format\": \"HH:mm:ss\",
+    \"partition_type\": \"APPEND\",
+    \"partition_condition_builder\": \"org.apache.kylin.metadata.model.PartitionDesc$DefaultPartitionConditionBuilder\"
+  },
+  \"capacity\": \"MEDIUM\"
+}",

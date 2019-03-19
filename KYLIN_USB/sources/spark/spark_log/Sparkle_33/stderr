@@ -1,0 +1,599 @@
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /stderr (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.DailyRollingFileAppender.activateOptions(DailyRollingFileAppender.java:223)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.parseCatsAndRenderers(PropertyConfigurator.java:672)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:516)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.apache.spark.internal.Logging$class.initializeLogging(Logging.scala:120)
+	at org.apache.spark.internal.Logging$class.initializeLogIfNecessary(Logging.scala:108)
+	at org.apache.spark.deploy.SparkSubmit$.initializeLogIfNecessary(SparkSubmit.scala:71)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:128)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+log4j:ERROR Either File or DatePattern options are not set for appender [DRFA-stderr].
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /stdout (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.DailyRollingFileAppender.activateOptions(DailyRollingFileAppender.java:223)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.parseCatsAndRenderers(PropertyConfigurator.java:672)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:516)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.apache.spark.internal.Logging$class.initializeLogging(Logging.scala:120)
+	at org.apache.spark.internal.Logging$class.initializeLogIfNecessary(Logging.scala:108)
+	at org.apache.spark.deploy.SparkSubmit$.initializeLogIfNecessary(SparkSubmit.scala:71)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:128)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+log4j:ERROR Either File or DatePattern options are not set for appender [DRFA-stdout].
+19/03/11 20:21:52 INFO SparkContext: Running Spark version 2.3.2
+19/03/11 20:21:52 INFO SparkContext: Submitted application: t001w_finale
+19/03/11 20:21:52 INFO SecurityManager: Changing view acls to: hadoop
+19/03/11 20:21:52 INFO SecurityManager: Changing modify acls to: hadoop
+19/03/11 20:21:52 INFO SecurityManager: Changing view acls groups to: 
+19/03/11 20:21:52 INFO SecurityManager: Changing modify acls groups to: 
+19/03/11 20:21:52 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+19/03/11 20:21:53 INFO Utils: Successfully started service 'sparkDriver' on port 32981.
+19/03/11 20:21:53 INFO SparkEnv: Registering MapOutputTracker
+19/03/11 20:21:53 INFO SparkEnv: Registering BlockManagerMaster
+19/03/11 20:21:53 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/03/11 20:21:53 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/03/11 20:21:53 INFO DiskBlockManager: Created local directory at /mnt/tmp/blockmgr-3973389d-ddf2-45c4-a018-52cc911d9a77
+19/03/11 20:21:53 INFO MemoryStore: MemoryStore started with capacity 2.8 GB
+19/03/11 20:21:53 INFO SparkEnv: Registering OutputCommitCoordinator
+19/03/11 20:21:54 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+19/03/11 20:21:54 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+19/03/11 20:21:54 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+19/03/11 20:21:54 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+19/03/11 20:21:54 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+19/03/11 20:21:54 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://ip-10-0-76-67.eu-west-1.compute.internal:4044
+19/03/11 20:21:54 INFO Utils: Using initial executors = 2, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/03/11 20:21:55 INFO RMProxy: Connecting to ResourceManager at ip-10-0-76-67.eu-west-1.compute.internal/10.0.76.67:8032
+19/03/11 20:21:55 INFO Client: Requesting a new application from cluster with 20 NodeManagers
+19/03/11 20:21:56 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (116736 MB per container)
+19/03/11 20:21:56 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+19/03/11 20:21:56 INFO Client: Setting up container launch context for our AM
+19/03/11 20:21:56 INFO Client: Setting up the launch environment for our AM container
+19/03/11 20:21:56 INFO Client: Preparing resources for our AM container
+19/03/11 20:21:57 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+19/03/11 20:22:00 INFO Client: Uploading resource file:/mnt/tmp/spark-a007b9de-4ec3-425d-ad86-9e6a72c7b637/__spark_libs__8714783845976834414.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0387/__spark_libs__8714783845976834414.zip
+19/03/11 20:22:01 INFO Client: Uploading resource file:/etc/spark/conf/hive-site.xml -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0387/hive-site.xml
+19/03/11 20:22:01 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/pyspark.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0387/pyspark.zip
+19/03/11 20:22:01 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/py4j-0.10.7-src.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0387/py4j-0.10.7-src.zip
+19/03/11 20:22:02 INFO Client: Uploading resource file:/mnt/tmp/spark-a007b9de-4ec3-425d-ad86-9e6a72c7b637/__spark_conf__8184448261741997139.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0387/__spark_conf__.zip
+19/03/11 20:22:02 INFO SecurityManager: Changing view acls to: hadoop
+19/03/11 20:22:02 INFO SecurityManager: Changing modify acls to: hadoop
+19/03/11 20:22:02 INFO SecurityManager: Changing view acls groups to: 
+19/03/11 20:22:02 INFO SecurityManager: Changing modify acls groups to: 
+19/03/11 20:22:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+19/03/11 20:22:02 INFO Client: Submitting application application_1552302308810_0387 to ResourceManager
+19/03/11 20:22:02 INFO YarnClientImpl: Submitted application application_1552302308810_0387
+19/03/11 20:22:02 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1552302308810_0387 and attemptId None
+19/03/11 20:22:03 INFO Client: Application report for application_1552302308810_0387 (state: ACCEPTED)
+19/03/11 20:22:03 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1552335722209
+	 final status: UNDEFINED
+	 tracking URL: http://ip-10-0-76-67.eu-west-1.compute.internal:20888/proxy/application_1552302308810_0387/
+	 user: hadoop
+19/03/11 20:22:04 INFO Client: Application report for application_1552302308810_0387 (state: ACCEPTED)
+19/03/11 20:22:05 INFO Client: Application report for application_1552302308810_0387 (state: ACCEPTED)
+19/03/11 20:22:06 INFO Client: Application report for application_1552302308810_0387 (state: ACCEPTED)
+19/03/11 20:22:06 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> ip-10-0-76-67.eu-west-1.compute.internal, PROXY_URI_BASES -> http://ip-10-0-76-67.eu-west-1.compute.internal:20888/proxy/application_1552302308810_0387), /proxy/application_1552302308810_0387
+19/03/11 20:22:06 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /jobs, /jobs/json, /jobs/job, /jobs/job/json, /stages, /stages/json, /stages/stage, /stages/stage/json, /stages/pool, /stages/pool/json, /storage, /storage/json, /storage/rdd, /storage/rdd/json, /environment, /environment/json, /executors, /executors/json, /executors/threadDump, /executors/threadDump/json, /static, /, /api, /jobs/job/kill, /stages/stage/kill.
+19/03/11 20:22:06 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+19/03/11 20:22:07 INFO Client: Application report for application_1552302308810_0387 (state: RUNNING)
+19/03/11 20:22:07 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.76.134
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1552335722209
+	 final status: UNDEFINED
+	 tracking URL: http://ip-10-0-76-67.eu-west-1.compute.internal:20888/proxy/application_1552302308810_0387/
+	 user: hadoop
+19/03/11 20:22:07 INFO YarnClientSchedulerBackend: Application application_1552302308810_0387 has started running.
+19/03/11 20:22:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41457.
+19/03/11 20:22:07 INFO NettyBlockTransferService: Server created on ip-10-0-76-67.eu-west-1.compute.internal:41457
+19/03/11 20:22:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/03/11 20:22:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 41457, None)
+19/03/11 20:22:07 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-0-76-67.eu-west-1.compute.internal:41457 with 2.8 GB RAM, BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 41457, None)
+19/03/11 20:22:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 41457, None)
+19/03/11 20:22:07 INFO BlockManager: external shuffle service port = 7337
+19/03/11 20:22:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 41457, None)
+19/03/11 20:22:07 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+19/03/11 20:22:07 INFO EventLoggingListener: Logging events to hdfs:/var/log/spark/apps/application_1552302308810_0387
+19/03/11 20:22:07 INFO Utils: Using initial executors = 2, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/03/11 20:22:11 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.76.233:37348) with ID 1
+19/03/11 20:22:11 INFO ExecutorAllocationManager: New executor 1 has registered (new total is 1)
+19/03/11 20:22:11 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.76.213:40974) with ID 2
+19/03/11 20:22:11 INFO ExecutorAllocationManager: New executor 2 has registered (new total is 2)
+19/03/11 20:22:11 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+19/03/11 20:22:12 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-0-76-233.eu-west-1.compute.internal:33897 with 3.4 GB RAM, BlockManagerId(1, ip-10-0-76-233.eu-west-1.compute.internal, 33897, None)
+19/03/11 20:22:12 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-0-76-213.eu-west-1.compute.internal:39677 with 3.4 GB RAM, BlockManagerId(2, ip-10-0-76-213.eu-west-1.compute.internal, 39677, None)
+19/03/11 20:22:12 INFO SharedState: loading hive config file: file:/etc/spark/conf.dist/hive-site.xml
+19/03/11 20:22:12 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('hdfs:///user/spark/warehouse').
+19/03/11 20:22:12 INFO SharedState: Warehouse path is 'hdfs:///user/spark/warehouse'.
+19/03/11 20:22:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL.
+19/03/11 20:22:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/json.
+19/03/11 20:22:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution.
+19/03/11 20:22:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution/json.
+19/03/11 20:22:12 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /static/sql.
+19/03/11 20:22:12 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/03/11 20:22:13 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+19/03/11 20:22:13 INFO DAGScheduler: Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+19/03/11 20:22:13 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+19/03/11 20:22:13 INFO DAGScheduler: Parents of final stage: List()
+19/03/11 20:22:13 INFO DAGScheduler: Missing parents: List()
+19/03/11 20:22:13 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+19/03/11 20:22:13 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 76.3 KB, free 2.8 GB)
+19/03/11 20:22:13 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 28.6 KB, free 2.8 GB)
+19/03/11 20:22:13 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 28.6 KB, free: 2.8 GB)
+19/03/11 20:22:13 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1079
+19/03/11 20:22:13 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+19/03/11 20:22:13 INFO YarnScheduler: Adding task set 0.0 with 1 tasks
+19/03/11 20:22:13 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 0, PROCESS_LOCAL, 8128 bytes)
+19/03/11 20:22:14 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-10-0-76-213.eu-west-1.compute.internal:39677 (size: 28.6 KB, free: 3.4 GB)
+19/03/11 20:22:15 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1712 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (1/1)
+19/03/11 20:22:15 INFO YarnScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+19/03/11 20:22:15 INFO DAGScheduler: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 1.974 s
+19/03/11 20:22:15 INFO DAGScheduler: Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 2.034367 s
+19/03/11 20:22:15 INFO HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+19/03/11 20:22:16 INFO metastore: Trying to connect to metastore with URI thrift://ip-10-0-76-67.eu-west-1.compute.internal:9083
+19/03/11 20:22:16 INFO metastore: Connected to metastore.
+19/03/11 20:22:16 INFO SessionState: Created local directory: /tmp/46e6180e-118d-40e1-9f06-b379303fcdca_resources
+19/03/11 20:22:16 INFO SessionState: Created HDFS directory: /tmp/hive/hadoop/46e6180e-118d-40e1-9f06-b379303fcdca
+19/03/11 20:22:16 INFO SessionState: Created local directory: /tmp/hadoop/46e6180e-118d-40e1-9f06-b379303fcdca
+19/03/11 20:22:16 INFO SessionState: Created HDFS directory: /tmp/hive/hadoop/46e6180e-118d-40e1-9f06-b379303fcdca/_tmp_space.db
+19/03/11 20:22:16 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is hdfs:///user/spark/warehouse
+19/03/11 20:22:16 INFO ContextCleaner: Cleaned accumulator 5
+19/03/11 20:22:16 INFO ContextCleaner: Cleaned accumulator 1
+19/03/11 20:22:16 INFO ContextCleaner: Cleaned accumulator 2
+19/03/11 20:22:16 INFO ContextCleaner: Cleaned accumulator 20
+19/03/11 20:22:17 INFO BlockManagerInfo: Removed broadcast_0_piece0 on ip-10-0-76-213.eu-west-1.compute.internal:39677 in memory (size: 28.6 KB, free: 3.4 GB)
+19/03/11 20:22:17 INFO BlockManagerInfo: Removed broadcast_0_piece0 on ip-10-0-76-67.eu-west-1.compute.internal:41457 in memory (size: 28.6 KB, free: 2.8 GB)
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 24
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 8
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 14
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 10
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 25
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 23
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 13
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 9
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 19
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 12
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 17
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 15
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 18
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 6
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 16
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 7
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 3
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 11
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 4
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 21
+19/03/11 20:22:17 INFO ContextCleaner: Cleaned accumulator 22
+19/03/11 20:22:18 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+19/03/11 20:22:18 INFO DAGScheduler: Got job 1 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+19/03/11 20:22:18 INFO DAGScheduler: Final stage: ResultStage 1 (parquet at NativeMethodAccessorImpl.java:0)
+19/03/11 20:22:18 INFO DAGScheduler: Parents of final stage: List()
+19/03/11 20:22:18 INFO DAGScheduler: Missing parents: List()
+19/03/11 20:22:18 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[3] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+19/03/11 20:22:18 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 76.3 KB, free 2.8 GB)
+19/03/11 20:22:18 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 28.6 KB, free 2.8 GB)
+19/03/11 20:22:18 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 28.6 KB, free: 2.8 GB)
+19/03/11 20:22:18 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1079
+19/03/11 20:22:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+19/03/11 20:22:18 INFO YarnScheduler: Adding task set 1.0 with 1 tasks
+19/03/11 20:22:18 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 0, PROCESS_LOCAL, 8135 bytes)
+19/03/11 20:22:18 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 28.6 KB, free: 3.4 GB)
+19/03/11 20:22:19 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 1569 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (1/1)
+19/03/11 20:22:19 INFO YarnScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+19/03/11 20:22:19 INFO DAGScheduler: ResultStage 1 (parquet at NativeMethodAccessorImpl.java:0) finished in 1.601 s
+19/03/11 20:22:19 INFO DAGScheduler: Job 1 finished: parquet at NativeMethodAccessorImpl.java:0, took 1.603971 s
+19/03/11 20:22:21 INFO FileSourceStrategy: Pruning directories with: 
+19/03/11 20:22:21 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(cust_num_plant#4),isnotnull(sapsrc#5),isnotnull(distrib_channel#3),isnotnull(plant_category#6),isnotnull(purch_org#1),(plant_category#6 = A),(distrib_channel#3 = 02),StartsWith(cust_num_plant#4, 0),(sapsrc#5 = PRT),NOT cast(plant_id#0 as int) IN (402,407,415,417)
+19/03/11 20:22:21 INFO FileSourceStrategy: Output Data Schema: struct<plant_id: string, purch_org: string, sales_org: string, distrib_channel: string, cust_num_plant: string ... 6 more fields>
+19/03/11 20:22:21 INFO FileSourceScanExec: Pushed Filters: IsNotNull(cust_num_plant),IsNotNull(sapsrc),IsNotNull(distrib_channel),IsNotNull(plant_category),IsNotNull(purch_org),EqualTo(plant_category,A),EqualTo(distrib_channel,02),StringStartsWith(cust_num_plant,0),EqualTo(sapsrc,PRT)
+19/03/11 20:22:21 INFO FileSourceStrategy: Pruning directories with: 
+19/03/11 20:22:21 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(sapsrc#19),(sapsrc#19 = PRT)
+19/03/11 20:22:21 INFO FileSourceStrategy: Output Data Schema: struct<country_code: string, address_num: int, sapsrc: string ... 1 more fields>
+19/03/11 20:22:21 INFO FileSourceScanExec: Pushed Filters: IsNotNull(sapsrc),EqualTo(sapsrc,PRT)
+19/03/11 20:22:21 INFO FileSourceStrategy: Pruning directories with: 
+19/03/11 20:22:21 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(cust_num_plant#4),isnotnull(sapsrc#5),isnotnull(distrib_channel#3),isnotnull(plant_category#6),isnotnull(purch_org#1),(plant_category#6 = A),(distrib_channel#3 = 02),StartsWith(cust_num_plant#4, 0),(sapsrc#5 = PBR),NOT cast(plant_id#0 as int) IN (402,407,415,417)
+19/03/11 20:22:21 INFO FileSourceStrategy: Output Data Schema: struct<plant_id: string, purch_org: string, sales_org: string, distrib_channel: string, cust_num_plant: string ... 6 more fields>
+19/03/11 20:22:21 INFO FileSourceScanExec: Pushed Filters: IsNotNull(cust_num_plant),IsNotNull(sapsrc),IsNotNull(distrib_channel),IsNotNull(plant_category),IsNotNull(purch_org),EqualTo(plant_category,A),EqualTo(distrib_channel,02),StringStartsWith(cust_num_plant,0),EqualTo(sapsrc,PBR)
+19/03/11 20:22:21 INFO FileSourceStrategy: Pruning directories with: 
+19/03/11 20:22:21 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(sapsrc#19),(sapsrc#19 = PBR)
+19/03/11 20:22:21 INFO FileSourceStrategy: Output Data Schema: struct<country_code: string, address_num: int, sapsrc: string ... 1 more fields>
+19/03/11 20:22:21 INFO FileSourceScanExec: Pushed Filters: IsNotNull(sapsrc),EqualTo(sapsrc,PBR)
+19/03/11 20:22:21 INFO FileSourceScanExec: Pushed Filters: IsNotNull(none),EqualTo(none,PBR)
+19/03/11 20:22:21 INFO FileSourceScanExec: Pushed Filters: EqualTo(none,PRT),IsNotNull(none)
+19/03/11 20:22:22 INFO ParquetFileFormat: Using user defined output committer for Parquet: com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter
+19/03/11 20:22:22 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+19/03/11 20:22:22 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/03/11 20:22:22 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter
+19/03/11 20:22:22 INFO EmrOptimizedParquetOutputCommitter: EMR Optimized committer is not supported by this filesystem (org.apache.hadoop.hdfs.DistributedFileSystem)
+19/03/11 20:22:22 INFO EmrOptimizedParquetOutputCommitter: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+19/03/11 20:22:22 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+19/03/11 20:22:22 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/03/11 20:22:22 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+19/03/11 20:22:22 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+19/03/11 20:22:22 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 53
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 30
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 47
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 28
+19/03/11 20:22:22 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-10-0-76-67.eu-west-1.compute.internal:41457 in memory (size: 28.6 KB, free: 2.8 GB)
+19/03/11 20:22:22 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-10-0-76-233.eu-west-1.compute.internal:33897 in memory (size: 28.6 KB, free: 3.4 GB)
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 45
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 33
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 34
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 41
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 50
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 40
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 46
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 26
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 38
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 31
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 49
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 39
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 35
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 27
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 32
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 51
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 37
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 48
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 42
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 43
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 36
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 44
+19/03/11 20:22:22 INFO ContextCleaner: Cleaned accumulator 29
+19/03/11 20:22:23 INFO CodeGenerator: Code generated in 571.143632 ms
+19/03/11 20:22:23 INFO CodeGenerator: Code generated in 587.200248 ms
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 318.9 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 318.9 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 27.7 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 27.7 KB, free: 2.8 GB)
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 27.7 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO SparkContext: Created broadcast 2 from run at ThreadPoolExecutor.java:1149
+19/03/11 20:22:23 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 27.7 KB, free: 2.8 GB)
+19/03/11 20:22:23 INFO SparkContext: Created broadcast 3 from run at ThreadPoolExecutor.java:1149
+19/03/11 20:22:23 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+19/03/11 20:22:23 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+19/03/11 20:22:23 INFO SparkContext: Starting job: run at ThreadPoolExecutor.java:1149
+19/03/11 20:22:23 INFO DAGScheduler: Got job 2 (run at ThreadPoolExecutor.java:1149) with 3 output partitions
+19/03/11 20:22:23 INFO DAGScheduler: Final stage: ResultStage 2 (run at ThreadPoolExecutor.java:1149)
+19/03/11 20:22:23 INFO DAGScheduler: Parents of final stage: List()
+19/03/11 20:22:23 INFO DAGScheduler: Missing parents: List()
+19/03/11 20:22:23 INFO SparkContext: Starting job: run at ThreadPoolExecutor.java:1149
+19/03/11 20:22:23 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[8] at run at ThreadPoolExecutor.java:1149), which has no missing parents
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 11.5 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.1 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 5.1 KB, free: 2.8 GB)
+19/03/11 20:22:23 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1079
+19/03/11 20:22:23 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 2 (MapPartitionsRDD[8] at run at ThreadPoolExecutor.java:1149) (first 15 tasks are for partitions Vector(0, 1, 2))
+19/03/11 20:22:23 INFO YarnScheduler: Adding task set 2.0 with 3 tasks
+19/03/11 20:22:23 INFO DAGScheduler: Got job 3 (run at ThreadPoolExecutor.java:1149) with 3 output partitions
+19/03/11 20:22:23 INFO DAGScheduler: Final stage: ResultStage 3 (run at ThreadPoolExecutor.java:1149)
+19/03/11 20:22:23 INFO DAGScheduler: Parents of final stage: List()
+19/03/11 20:22:23 INFO DAGScheduler: Missing parents: List()
+19/03/11 20:22:23 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[9] at run at ThreadPoolExecutor.java:1149), which has no missing parents
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 11.5 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 5.1 KB, free 2.8 GB)
+19/03/11 20:22:23 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 5.1 KB, free: 2.8 GB)
+19/03/11 20:22:23 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1079
+19/03/11 20:22:23 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 3 (MapPartitionsRDD[9] at run at ThreadPoolExecutor.java:1149) (first 15 tasks are for partitions Vector(0, 1, 2))
+19/03/11 20:22:23 INFO YarnScheduler: Adding task set 3.0 with 3 tasks
+19/03/11 20:22:23 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 0, NODE_LOCAL, 14646 bytes)
+19/03/11 20:22:23 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 5.1 KB, free: 3.4 GB)
+19/03/11 20:22:23 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 27.7 KB, free: 3.4 GB)
+19/03/11 20:22:24 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 3)
+19/03/11 20:22:24 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 3, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 1, NODE_LOCAL, 14646 bytes)
+19/03/11 20:22:24 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 1100 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (1/3)
+19/03/11 20:22:24 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 4, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 2, NODE_LOCAL, 11446 bytes)
+19/03/11 20:22:24 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 3) in 251 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (2/3)
+19/03/11 20:22:24 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 5, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 0, NODE_LOCAL, 14646 bytes)
+19/03/11 20:22:24 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 4) in 109 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (3/3)
+19/03/11 20:22:24 INFO YarnScheduler: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+19/03/11 20:22:24 INFO DAGScheduler: ResultStage 2 (run at ThreadPoolExecutor.java:1149) finished in 1.488 s
+19/03/11 20:22:24 INFO DAGScheduler: Job 2 finished: run at ThreadPoolExecutor.java:1149, took 1.501136 s
+19/03/11 20:22:24 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 5.1 KB, free: 3.4 GB)
+19/03/11 20:22:24 INFO CodeGenerator: Code generated in 11.34705 ms
+19/03/11 20:22:24 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 27.7 KB, free: 3.4 GB)
+19/03/11 20:22:24 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 4.0 MB, free 2.8 GB)
+19/03/11 20:22:24 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 938.5 KB, free 2.8 GB)
+19/03/11 20:22:24 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 938.5 KB, free: 2.8 GB)
+19/03/11 20:22:24 INFO SparkContext: Created broadcast 6 from run at ThreadPoolExecutor.java:1149
+19/03/11 20:22:25 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 6, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 1, NODE_LOCAL, 14646 bytes)
+19/03/11 20:22:25 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 5) in 349 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (1/3)
+19/03/11 20:22:25 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 7, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 2, NODE_LOCAL, 11446 bytes)
+19/03/11 20:22:25 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 6) in 244 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (2/3)
+19/03/11 20:22:25 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 7) in 120 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (3/3)
+19/03/11 20:22:25 INFO YarnScheduler: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+19/03/11 20:22:25 INFO DAGScheduler: ResultStage 3 (run at ThreadPoolExecutor.java:1149) finished in 2.159 s
+19/03/11 20:22:25 INFO DAGScheduler: Job 3 finished: run at ThreadPoolExecutor.java:1149, took 2.209569 s
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 6.1 MB, free 2.7 GB)
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 636.2 KB, free 2.7 GB)
+19/03/11 20:22:25 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 636.2 KB, free: 2.8 GB)
+19/03/11 20:22:25 INFO SparkContext: Created broadcast 7 from run at ThreadPoolExecutor.java:1149
+19/03/11 20:22:25 INFO CodeGenerator: Code generated in 50.2943 ms
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 320.2 KB, free 2.7 GB)
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 27.9 KB, free 2.7 GB)
+19/03/11 20:22:25 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 27.9 KB, free: 2.8 GB)
+19/03/11 20:22:25 INFO SparkContext: Created broadcast 8 from saveAsTable at NativeMethodAccessorImpl.java:0
+19/03/11 20:22:25 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+19/03/11 20:22:25 INFO CodeGenerator: Code generated in 39.248033 ms
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 320.2 KB, free 2.7 GB)
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 27.9 KB, free 2.7 GB)
+19/03/11 20:22:25 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 27.9 KB, free: 2.8 GB)
+19/03/11 20:22:25 INFO SparkContext: Created broadcast 9 from saveAsTable at NativeMethodAccessorImpl.java:0
+19/03/11 20:22:25 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+19/03/11 20:22:25 INFO SparkContext: Starting job: saveAsTable at NativeMethodAccessorImpl.java:0
+19/03/11 20:22:25 INFO DAGScheduler: Registering RDD 16 (saveAsTable at NativeMethodAccessorImpl.java:0)
+19/03/11 20:22:25 INFO DAGScheduler: Got job 4 (saveAsTable at NativeMethodAccessorImpl.java:0) with 80 output partitions
+19/03/11 20:22:25 INFO DAGScheduler: Final stage: ResultStage 5 (saveAsTable at NativeMethodAccessorImpl.java:0)
+19/03/11 20:22:25 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+19/03/11 20:22:25 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 4)
+19/03/11 20:22:25 INFO DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[16] at saveAsTable at NativeMethodAccessorImpl.java:0), which has no missing parents
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 34.4 KB, free 2.7 GB)
+19/03/11 20:22:25 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 9.5 KB, free 2.7 GB)
+19/03/11 20:22:25 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 9.5 KB, free: 2.8 GB)
+19/03/11 20:22:25 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1079
+19/03/11 20:22:25 INFO DAGScheduler: Submitting 6 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[16] at saveAsTable at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5))
+19/03/11 20:22:25 INFO YarnScheduler: Adding task set 4.0 with 6 tasks
+19/03/11 20:22:25 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 8, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 0, RACK_LOCAL, 14520 bytes)
+19/03/11 20:22:25 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 9, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 1, RACK_LOCAL, 14520 bytes)
+19/03/11 20:22:25 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 9.5 KB, free: 3.4 GB)
+19/03/11 20:22:25 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 636.2 KB, free: 3.4 GB)
+19/03/11 20:22:25 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on ip-10-0-76-213.eu-west-1.compute.internal:39677 (size: 9.5 KB, free: 3.4 GB)
+19/03/11 20:22:26 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 27.9 KB, free: 3.4 GB)
+19/03/11 20:22:26 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-10-0-76-213.eu-west-1.compute.internal:39677 (size: 636.2 KB, free: 3.4 GB)
+19/03/11 20:22:26 INFO TaskSetManager: Starting task 2.0 in stage 4.0 (TID 10, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 2, RACK_LOCAL, 11432 bytes)
+19/03/11 20:22:26 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 8) in 610 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (1/6)
+19/03/11 20:22:26 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on ip-10-0-76-213.eu-west-1.compute.internal:39677 (size: 27.9 KB, free: 3.4 GB)
+19/03/11 20:22:26 INFO TaskSetManager: Starting task 3.0 in stage 4.0 (TID 11, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 3, RACK_LOCAL, 14520 bytes)
+19/03/11 20:22:26 INFO TaskSetManager: Finished task 2.0 in stage 4.0 (TID 10) in 159 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (2/6)
+19/03/11 20:22:26 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 938.5 KB, free: 3.4 GB)
+19/03/11 20:22:26 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 27.9 KB, free: 3.4 GB)
+19/03/11 20:22:26 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 3)
+19/03/11 20:22:26 INFO TaskSetManager: Starting task 4.0 in stage 4.0 (TID 12, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 4, RACK_LOCAL, 14520 bytes)
+19/03/11 20:22:26 INFO TaskSetManager: Finished task 3.0 in stage 4.0 (TID 11) in 342 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (3/6)
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 5.0 in stage 4.0 (TID 13, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 5, RACK_LOCAL, 11432 bytes)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 4.0 in stage 4.0 (TID 12) in 266 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (4/6)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 5.0 in stage 4.0 (TID 13) in 94 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (5/6)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 9) in 1613 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (6/6)
+19/03/11 20:22:27 INFO YarnScheduler: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+19/03/11 20:22:27 INFO DAGScheduler: ShuffleMapStage 4 (saveAsTable at NativeMethodAccessorImpl.java:0) finished in 1.633 s
+19/03/11 20:22:27 INFO DAGScheduler: looking for newly runnable stages
+19/03/11 20:22:27 INFO DAGScheduler: running: Set()
+19/03/11 20:22:27 INFO DAGScheduler: waiting: Set(ResultStage 5)
+19/03/11 20:22:27 INFO DAGScheduler: failed: Set()
+19/03/11 20:22:27 INFO DAGScheduler: Submitting ResultStage 5 (ShuffledRowRDD[17] at saveAsTable at NativeMethodAccessorImpl.java:0), which has no missing parents
+19/03/11 20:22:27 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 155.9 KB, free 2.7 GB)
+19/03/11 20:22:27 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 58.0 KB, free 2.7 GB)
+19/03/11 20:22:27 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on ip-10-0-76-67.eu-west-1.compute.internal:41457 (size: 58.0 KB, free: 2.8 GB)
+19/03/11 20:22:27 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1079
+19/03/11 20:22:27 INFO DAGScheduler: Submitting 80 missing tasks from ResultStage 5 (ShuffledRowRDD[17] at saveAsTable at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+19/03/11 20:22:27 INFO YarnScheduler: Adding task set 5.0 with 80 tasks
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 14, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 0, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 15, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 1, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:27 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on ip-10-0-76-233.eu-west-1.compute.internal:33897 (size: 58.0 KB, free: 3.4 GB)
+19/03/11 20:22:27 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on ip-10-0-76-213.eu-west-1.compute.internal:39677 (size: 58.0 KB, free: 3.4 GB)
+19/03/11 20:22:27 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.76.233:37348
+19/03/11 20:22:27 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.0.76.213:40974
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 2.0 in stage 5.0 (TID 16, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 2, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 14) in 365 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (1/80)
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 3.0 in stage 5.0 (TID 17, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 3, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 15) in 369 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (2/80)
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 4.0 in stage 5.0 (TID 18, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 4, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 2.0 in stage 5.0 (TID 16) in 48 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (3/80)
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 5.0 in stage 5.0 (TID 19, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 5, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 3.0 in stage 5.0 (TID 17) in 79 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (4/80)
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 6.0 in stage 5.0 (TID 20, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 6, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:27 INFO TaskSetManager: Finished task 4.0 in stage 5.0 (TID 18) in 57 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (5/80)
+19/03/11 20:22:27 INFO TaskSetManager: Starting task 7.0 in stage 5.0 (TID 21, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 7, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 5.0 in stage 5.0 (TID 19) in 33 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (6/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 8.0 in stage 5.0 (TID 22, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 8, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 6.0 in stage 5.0 (TID 20) in 43 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (7/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 9.0 in stage 5.0 (TID 23, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 9, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 7.0 in stage 5.0 (TID 21) in 32 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (8/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 10.0 in stage 5.0 (TID 24, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 10, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 9.0 in stage 5.0 (TID 23) in 32 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (9/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 11.0 in stage 5.0 (TID 25, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 11, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 8.0 in stage 5.0 (TID 22) in 43 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (10/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 12.0 in stage 5.0 (TID 26, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 12, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 10.0 in stage 5.0 (TID 24) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (11/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 13.0 in stage 5.0 (TID 27, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 13, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 11.0 in stage 5.0 (TID 25) in 42 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (12/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 14.0 in stage 5.0 (TID 28, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 14, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 12.0 in stage 5.0 (TID 26) in 29 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (13/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 15.0 in stage 5.0 (TID 29, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 15, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 13.0 in stage 5.0 (TID 27) in 39 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (14/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 16.0 in stage 5.0 (TID 30, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 16, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 14.0 in stage 5.0 (TID 28) in 38 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (15/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 17.0 in stage 5.0 (TID 31, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 17, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 16.0 in stage 5.0 (TID 30) in 37 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (16/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 18.0 in stage 5.0 (TID 32, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 18, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 15.0 in stage 5.0 (TID 29) in 59 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (17/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 19.0 in stage 5.0 (TID 33, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 19, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 17.0 in stage 5.0 (TID 31) in 39 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (18/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 20.0 in stage 5.0 (TID 34, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 20, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 18.0 in stage 5.0 (TID 32) in 37 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (19/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 21.0 in stage 5.0 (TID 35, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 21, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 19.0 in stage 5.0 (TID 33) in 37 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (20/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 22.0 in stage 5.0 (TID 36, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 22, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 20.0 in stage 5.0 (TID 34) in 36 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (21/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 23.0 in stage 5.0 (TID 37, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 23, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 21.0 in stage 5.0 (TID 35) in 32 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (22/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 24.0 in stage 5.0 (TID 38, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 24, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 22.0 in stage 5.0 (TID 36) in 40 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (23/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 25.0 in stage 5.0 (TID 39, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 25, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 23.0 in stage 5.0 (TID 37) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (24/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 26.0 in stage 5.0 (TID 40, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 26, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 25.0 in stage 5.0 (TID 39) in 30 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (25/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 27.0 in stage 5.0 (TID 41, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 27, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 24.0 in stage 5.0 (TID 38) in 62 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (26/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 28.0 in stage 5.0 (TID 42, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 28, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 26.0 in stage 5.0 (TID 40) in 27 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (27/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 29.0 in stage 5.0 (TID 43, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 29, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 27.0 in stage 5.0 (TID 41) in 35 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (28/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 30.0 in stage 5.0 (TID 44, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 30, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 28.0 in stage 5.0 (TID 42) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (29/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 31.0 in stage 5.0 (TID 45, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 31, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 30.0 in stage 5.0 (TID 44) in 34 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (30/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 32.0 in stage 5.0 (TID 46, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 32, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 29.0 in stage 5.0 (TID 43) in 44 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (31/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 33.0 in stage 5.0 (TID 47, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 33, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 31.0 in stage 5.0 (TID 45) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (32/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 34.0 in stage 5.0 (TID 48, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 34, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 32.0 in stage 5.0 (TID 46) in 34 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (33/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 35.0 in stage 5.0 (TID 49, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 35, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 33.0 in stage 5.0 (TID 47) in 32 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (34/80)
+19/03/11 20:22:28 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 3)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 36.0 in stage 5.0 (TID 50, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 36, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 34.0 in stage 5.0 (TID 48) in 42 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (35/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 37.0 in stage 5.0 (TID 51, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 37, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 36.0 in stage 5.0 (TID 50) in 38 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (36/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 38.0 in stage 5.0 (TID 52, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 38, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 35.0 in stage 5.0 (TID 49) in 57 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (37/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 39.0 in stage 5.0 (TID 53, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 39, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 38.0 in stage 5.0 (TID 52) in 32 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (38/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 40.0 in stage 5.0 (TID 54, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 40, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 37.0 in stage 5.0 (TID 51) in 38 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (39/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 41.0 in stage 5.0 (TID 55, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 41, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 39.0 in stage 5.0 (TID 53) in 30 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (40/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 42.0 in stage 5.0 (TID 56, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 42, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 40.0 in stage 5.0 (TID 54) in 36 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (41/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 43.0 in stage 5.0 (TID 57, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 43, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 41.0 in stage 5.0 (TID 55) in 30 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (42/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 44.0 in stage 5.0 (TID 58, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 44, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 42.0 in stage 5.0 (TID 56) in 39 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (43/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 45.0 in stage 5.0 (TID 59, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 45, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 43.0 in stage 5.0 (TID 57) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (44/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 46.0 in stage 5.0 (TID 60, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 46, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 45.0 in stage 5.0 (TID 59) in 30 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (45/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 47.0 in stage 5.0 (TID 61, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 47, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 44.0 in stage 5.0 (TID 58) in 45 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (46/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 48.0 in stage 5.0 (TID 62, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 48, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 46.0 in stage 5.0 (TID 60) in 38 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (47/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 49.0 in stage 5.0 (TID 63, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 49, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 47.0 in stage 5.0 (TID 61) in 37 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (48/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 50.0 in stage 5.0 (TID 64, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 50, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 51.0 in stage 5.0 (TID 65, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 51, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 49.0 in stage 5.0 (TID 63) in 40 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (49/80)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 48.0 in stage 5.0 (TID 62) in 42 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (50/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 52.0 in stage 5.0 (TID 66, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 52, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 50.0 in stage 5.0 (TID 64) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (51/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 53.0 in stage 5.0 (TID 67, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 53, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 51.0 in stage 5.0 (TID 65) in 44 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (52/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 54.0 in stage 5.0 (TID 68, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 54, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 52.0 in stage 5.0 (TID 66) in 32 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (53/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 55.0 in stage 5.0 (TID 69, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 55, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 53.0 in stage 5.0 (TID 67) in 38 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (54/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 56.0 in stage 5.0 (TID 70, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 56, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 54.0 in stage 5.0 (TID 68) in 27 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (55/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 57.0 in stage 5.0 (TID 71, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 57, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 55.0 in stage 5.0 (TID 69) in 32 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (56/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 58.0 in stage 5.0 (TID 72, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 58, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 56.0 in stage 5.0 (TID 70) in 29 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (57/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 59.0 in stage 5.0 (TID 73, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 59, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 57.0 in stage 5.0 (TID 71) in 34 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (58/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 60.0 in stage 5.0 (TID 74, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 60, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 58.0 in stage 5.0 (TID 72) in 52 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (59/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 61.0 in stage 5.0 (TID 75, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 61, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 59.0 in stage 5.0 (TID 73) in 32 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (60/80)
+19/03/11 20:22:28 INFO TaskSetManager: Starting task 62.0 in stage 5.0 (TID 76, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 62, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:28 INFO TaskSetManager: Finished task 60.0 in stage 5.0 (TID 74) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (61/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 63.0 in stage 5.0 (TID 77, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 63, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 61.0 in stage 5.0 (TID 75) in 35 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (62/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 64.0 in stage 5.0 (TID 78, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 64, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 62.0 in stage 5.0 (TID 76) in 29 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (63/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 65.0 in stage 5.0 (TID 79, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 65, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 63.0 in stage 5.0 (TID 77) in 31 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (64/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 66.0 in stage 5.0 (TID 80, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 66, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 64.0 in stage 5.0 (TID 78) in 27 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (65/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 67.0 in stage 5.0 (TID 81, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 67, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 66.0 in stage 5.0 (TID 80) in 31 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (66/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 68.0 in stage 5.0 (TID 82, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 68, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 65.0 in stage 5.0 (TID 79) in 55 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (67/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 69.0 in stage 5.0 (TID 83, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 69, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 67.0 in stage 5.0 (TID 81) in 29 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (68/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 70.0 in stage 5.0 (TID 84, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 70, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 68.0 in stage 5.0 (TID 82) in 32 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (69/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 71.0 in stage 5.0 (TID 85, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 71, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 70.0 in stage 5.0 (TID 84) in 38 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (70/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 72.0 in stage 5.0 (TID 86, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 72, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 69.0 in stage 5.0 (TID 83) in 51 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (71/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 73.0 in stage 5.0 (TID 87, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 73, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 71.0 in stage 5.0 (TID 85) in 31 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (72/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 74.0 in stage 5.0 (TID 88, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 74, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 72.0 in stage 5.0 (TID 86) in 29 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (73/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 75.0 in stage 5.0 (TID 89, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 75, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 74.0 in stage 5.0 (TID 88) in 29 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (74/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 76.0 in stage 5.0 (TID 90, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 76, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 75.0 in stage 5.0 (TID 89) in 33 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (75/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 77.0 in stage 5.0 (TID 91, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 77, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 73.0 in stage 5.0 (TID 87) in 64 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (76/80)
+19/03/11 20:22:29 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.76.56:48442) with ID 3
+19/03/11 20:22:29 INFO ExecutorAllocationManager: New executor 3 has registered (new total is 3)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 78.0 in stage 5.0 (TID 92, ip-10-0-76-213.eu-west-1.compute.internal, executor 2, partition 78, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 77.0 in stage 5.0 (TID 91) in 76 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (77/80)
+19/03/11 20:22:29 INFO TaskSetManager: Starting task 79.0 in stage 5.0 (TID 93, ip-10-0-76-233.eu-west-1.compute.internal, executor 1, partition 79, NODE_LOCAL, 7765 bytes)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 76.0 in stage 5.0 (TID 90) in 89 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (78/80)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 78.0 in stage 5.0 (TID 92) in 30 ms on ip-10-0-76-213.eu-west-1.compute.internal (executor 2) (79/80)
+19/03/11 20:22:29 INFO TaskSetManager: Finished task 79.0 in stage 5.0 (TID 93) in 40 ms on ip-10-0-76-233.eu-west-1.compute.internal (executor 1) (80/80)
+19/03/11 20:22:29 INFO YarnScheduler: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+19/03/11 20:22:29 INFO DAGScheduler: ResultStage 5 (saveAsTable at NativeMethodAccessorImpl.java:0) finished in 1.881 s
+19/03/11 20:22:29 INFO DAGScheduler: Job 4 finished: saveAsTable at NativeMethodAccessorImpl.java:0, took 3.545668 s
+19/03/11 20:22:29 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-0-76-56.eu-west-1.compute.internal:45835 with 3.4 GB RAM, BlockManagerId(3, ip-10-0-76-56.eu-west-1.compute.internal, 45835, None)
+19/03/11 20:22:29 INFO FileFormatWriter: Job null committed.
+19/03/11 20:22:29 INFO FileFormatWriter: Finished processing stats for job null.
+19/03/11 20:22:29 INFO HiveExternalCatalog: Persisting file based data source table `kylin_usb_mqb`.`t001w2` into Hive metastore in Hive compatible format.
+19/03/11 20:22:29 INFO SparkContext: Invoking stop() from shutdown hook
+19/03/11 20:22:29 INFO SparkUI: Stopped Spark web UI at http://ip-10-0-76-67.eu-west-1.compute.internal:4044
+19/03/11 20:22:30 INFO YarnClientSchedulerBackend: Interrupting monitor thread
+19/03/11 20:22:30 INFO YarnClientSchedulerBackend: Shutting down all executors
+19/03/11 20:22:30 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+19/03/11 20:22:30 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+19/03/11 20:22:30 INFO YarnClientSchedulerBackend: Stopped
+19/03/11 20:22:30 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/03/11 20:22:30 INFO MemoryStore: MemoryStore cleared
+19/03/11 20:22:30 INFO BlockManager: BlockManager stopped
+19/03/11 20:22:30 INFO BlockManagerMaster: BlockManagerMaster stopped
+19/03/11 20:22:30 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/03/11 20:22:30 INFO SparkContext: Successfully stopped SparkContext
+19/03/11 20:22:30 INFO ShutdownHookManager: Shutdown hook called
+19/03/11 20:22:30 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-c5d0037e-2ee4-4a22-8629-aa8961d2e731
+19/03/11 20:22:30 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-a007b9de-4ec3-425d-ad86-9e6a72c7b637/pyspark-fcc289ba-4eab-4b93-8095-a2216fc18ec9
+19/03/11 20:22:30 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-a007b9de-4ec3-425d-ad86-9e6a72c7b637

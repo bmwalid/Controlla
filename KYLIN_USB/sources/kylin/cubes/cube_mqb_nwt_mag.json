@@ -1,0 +1,491 @@
+{
+  "cubeName": "CUBE_MQB_NWT_MAG",
+  "project": "prod_mqb_usb",
+  "cubeDescData": "{
+  \"name\": \"CUBE_MQB_NWT_MAG\",
+  \"is_draft\": false,
+  \"model_name\": \"MODEL_MQB_NWT_MAG\",
+  \"description\": \"\",
+  \"null_string\": null,
+  \"dimensions\": [
+    {
+      \"name\": \"REPAIR_DETAIL\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"REPAIR_DETAIL\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"MATERIAL\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"MATERIAL\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"CATEG\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"CATEG\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DEFAUT\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"DEFAUT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LOC_LOCAL\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"LOC_LOCAL\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"TYPECH\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"TYPECH\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DATEVA\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"DATEVA\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"TIERS\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"TIERS\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"PURCH_ORG\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"PURCH_ORG\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"VENDOR_ID\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"VENDOR_ID\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"CURRENCY_ID\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"CURRENCY_ID\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"MDL_NUM_MODEL_R3\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"MDL_NUM_MODEL_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SUBCONTRACTOR_ID\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"SUBCONTRACTOR_ID\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"YEAR_DATEVA\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"YEAR_DATEVA\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"MONTH_DATEVA\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"MONTH_DATEVA\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"WEEK_DATEVA\",
+      \"table\": \"KYL_MQB_NWT\",
+      \"column\": \"WEEK_DATEVA\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"FST_ARTICLE_R3\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"FST_ARTICLE_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"FST_MODELE_R3\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"FST_MODELE_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_FAM\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_FAM\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_SSR\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_SSR\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_RAY\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_RAY\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_UNI\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_UNI\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_MODELE\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_MODELE\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_FAMILLE\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_FAMILLE\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_SOUS_RAYON\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_SOUS_RAYON\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_RAYON\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_RAYON\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_UNIVERS\",
+      \"table\": \"MAGASIN_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_UNIVERS\",
+      \"derived\": null
+    }
+  ],
+  \"measures\": [
+    {
+      \"name\": \"_COUNT_\",
+      \"function\": {
+        \"expression\": \"COUNT\",
+        \"parameter\": {
+          \"type\": \"constant\",
+          \"value\": \"1\"
+        },
+        \"returntype\": \"bigint\"
+      }
+    },
+    {
+      \"name\": \"SUM_QTE\",
+      \"function\": {
+        \"expression\": \"SUM\",
+        \"parameter\": {
+          \"type\": \"column\",
+          \"value\": \"KYL_MQB_NWT.QTE\"
+        },
+        \"returntype\": \"bigint\"
+      }
+    },
+    {
+      \"name\": \"SUM_PRX\",
+      \"function\": {
+        \"expression\": \"SUM\",
+        \"parameter\": {
+          \"type\": \"column\",
+          \"value\": \"KYL_MQB_NWT.PRICE_CESSION\"
+        },
+        \"returntype\": \"double\"
+      }
+    }
+  ],
+  \"dictionaries\": [],
+  \"rowkey\": {
+    \"rowkey_columns\": [
+      {
+        \"column\": \"KYL_MQB_NWT.YEAR_DATEVA\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.MONTH_DATEVA\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.WEEK_DATEVA\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.DATEVA\",
+        \"encoding\": \"date\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_UNI\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_UNIVERS\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_RAY\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_RAYON\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_SSR\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_SOUS_RAYON\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_FAM\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_FAMILLE\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.FST_MODELE_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_MODELE\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.MDL_NUM_MODEL_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"MAGASIN_HIERARCHIE_ARTICLE.FST_ARTICLE_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.MATERIAL\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": true
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.TYPECH\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.CURRENCY_ID\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.REPAIR_DETAIL\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.VENDOR_ID\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.LOC_LOCAL\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.DEFAUT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.PURCH_ORG\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.TIERS\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.CATEG\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_NWT.SUBCONTRACTOR_ID\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      }
+    ]
+  },
+  \"hbase_mapping\": {
+    \"column_family\": [
+      {
+        \"name\": \"F1\",
+        \"columns\": [
+          {
+            \"qualifier\": \"M\",
+            \"measure_refs\": [
+              \"_COUNT_\",
+              \"SUM_QTE\",
+              \"SUM_PRX\"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  \"aggregation_groups\": [
+    {
+      \"includes\": [
+        \"KYL_MQB_NWT.REPAIR_DETAIL\",
+        \"KYL_MQB_NWT.MATERIAL\",
+        \"KYL_MQB_NWT.CATEG\",
+        \"KYL_MQB_NWT.DEFAUT\",
+        \"KYL_MQB_NWT.LOC_LOCAL\",
+        \"KYL_MQB_NWT.TYPECH\",
+        \"KYL_MQB_NWT.DATEVA\",
+        \"KYL_MQB_NWT.TIERS\",
+        \"KYL_MQB_NWT.PURCH_ORG\",
+        \"KYL_MQB_NWT.VENDOR_ID\",
+        \"KYL_MQB_NWT.CURRENCY_ID\",
+        \"KYL_MQB_NWT.MDL_NUM_MODEL_R3\",
+        \"KYL_MQB_NWT.SUBCONTRACTOR_ID\",
+        \"KYL_MQB_NWT.YEAR_DATEVA\",
+        \"KYL_MQB_NWT.MONTH_DATEVA\",
+        \"KYL_MQB_NWT.WEEK_DATEVA\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.FST_ARTICLE_R3\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.FST_MODELE_R3\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_FAM\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_SSR\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_RAY\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_UNI\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_MODELE\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_FAMILLE\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_SOUS_RAYON\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_RAYON\",
+        \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_UNIVERS\"
+      ],
+      \"select_rule\": {
+        \"hierarchy_dims\": [
+          [
+            \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_UNIVERS\",
+            \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_RAYON\",
+            \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_SOUS_RAYON\",
+            \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_FAMILLE\",
+            \"MAGASIN_HIERARCHIE_ARTICLE.LIBELLE_MODELE\"
+          ],
+          [
+            \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_UNI\",
+            \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_RAY\",
+            \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_SSR\",
+            \"MAGASIN_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_FAM\"
+          ],
+          [
+            \"KYL_MQB_NWT.YEAR_DATEVA\",
+            \"KYL_MQB_NWT.MONTH_DATEVA\",
+            \"KYL_MQB_NWT.WEEK_DATEVA\",
+            \"KYL_MQB_NWT.DATEVA\"
+          ]
+        ],
+        \"mandatory_dims\": [
+          \"KYL_MQB_NWT.MDL_NUM_MODEL_R3\",
+          \"MAGASIN_HIERARCHIE_ARTICLE.FST_ARTICLE_R3\",
+          \"MAGASIN_HIERARCHIE_ARTICLE.FST_MODELE_R3\",
+          \"KYL_MQB_NWT.MATERIAL\"
+        ],
+        \"joint_dims\": [
+          [
+            \"KYL_MQB_NWT.REPAIR_DETAIL\",
+            \"KYL_MQB_NWT.CATEG\",
+            \"KYL_MQB_NWT.DEFAUT\",
+            \"KYL_MQB_NWT.LOC_LOCAL\",
+            \"KYL_MQB_NWT.TYPECH\",
+            \"KYL_MQB_NWT.TIERS\",
+            \"KYL_MQB_NWT.PURCH_ORG\",
+            \"KYL_MQB_NWT.VENDOR_ID\",
+            \"KYL_MQB_NWT.CURRENCY_ID\",
+            \"KYL_MQB_NWT.SUBCONTRACTOR_ID\"
+          ]
+        ]
+      }
+    }
+  ],
+  \"signature\": \"Znx03+J51GE5kyIeTlfVkA==\",
+  \"notify_list\": [],
+  \"status_need_notify\": [
+    \"ERROR\",
+    \"DISCARDED\",
+    \"SUCCEED\"
+  ],
+  \"partition_date_start\": 0,
+  \"partition_date_end\": 3153600000000,
+  \"auto_merge_time_ranges\": [
+    604800000,
+    2419200000
+  ],
+  \"volatile_range\": 0,
+  \"retention_range\": 0,
+  \"engine_type\": 2,
+  \"storage_type\": 2,
+  \"override_kylin_properties\": {},
+  \"cuboid_black_list\": [],
+  \"parent_forward\": 3,
+  \"mandatory_dimension_set_list\": [],
+  \"snapshot_table_desc_list\": []
+}"}

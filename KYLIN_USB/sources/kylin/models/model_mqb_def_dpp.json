@@ -1,0 +1,93 @@
+{"modelName": "kylin_model",
+"modelDescData":"{
+  \"name\": \"MODEL_MQB_DEF_DPP\",
+  \"owner\": \"ADMIN\",
+  \"is_draft\": false,
+  \"description\": \"\",
+  \"fact_table\": \"KYLIN_USB_MQB.KYL_MQB_DEF\",
+  \"lookups\": [
+    {
+      \"table\": \"KYLIN_USB_MQB.DPP_HIERARCHIE_ARTICLE\",
+      \"kind\": \"LOOKUP\",
+      \"alias\": \"DPP_HIERARCHIE_ARTICLE\",
+      \"join\": {
+        \"type\": \"inner\",
+        \"primary_key\": [
+          \"DPP_HIERARCHIE_ARTICLE.MATERDPP\",
+          \"DPP_HIERARCHIE_ARTICLE.VENDOR\",
+          \"DPP_HIERARCHIE_ARTICLE.RT_CONFMAT\"
+        ],
+        \"foreign_key\": [
+          \"KYL_MQB_DEF.SKU_NUM_SKU_R3\",
+          \"KYL_MQB_DEF.VENDOR_ID\",
+          \"KYL_MQB_DEF.MDL_NUM_MODEL_R3\"
+        ]
+      }
+    }
+  ],
+  \"dimensions\": [
+    {
+      \"table\": \"KYL_MQB_DEF\",
+      \"columns\": [
+        \"SKU_NUM_SKU_R3\",
+        \"MDL_NUM_MODEL_R3\",
+        \"DEF_DATE_VALIDATION\",
+        \"DFT_CODE_DFT\",
+        \"DEF_TYPE\",
+        \"LOC_CODE_LOC\",
+        \"DEF_IS_DECATHLON\",
+        \"MONTH_TDT_DATE_TRANSACTION\",
+        \"YEAR_TDT_DATE_TRANSACTION\",
+        \"WEEK_TDT_DATE_TRANSACTION\",
+        \"LABEL_DEFECT\",
+        \"LABEL_LOC\",
+        \"PURCH_ORG\",
+        \"PURCH_ORG_TEXT\",
+        \"SALES_ORG\",
+        \"SALES_ORG_TEXT\",
+        \"DISTRIB_CHANNEL\",
+        \"PLANT\",
+        \"VENDOR_ID\",
+        \"SUBCONTRACTOR_ID\"
+      ]
+    },
+    {
+      \"table\": \"DPP_HIERARCHIE_ARTICLE\",
+      \"columns\": [
+        \"VENDOR\",
+        \"MATERDPP\",
+        \"SUBDPDPP\",
+        \"SUBDPLIB\",
+        \"SECTORDPP\",
+        \"SECTORLIB\",
+        \"FAMILYDPP\",
+        \"FAMILYLIB\",
+        \"DEPTDPP\",
+        \"DEPTLIB\",
+        \"RT_CONFMAT\",
+        \"LIBELLE_MODELE\"
+      ]
+    }
+  ],
+  \"metrics\": [
+    \"KYL_MQB_DEF.DEF_QUANTITE\",
+    \"KYL_MQB_DEF.PRICE_CESSION\"
+  ],
+  \"filter_condition\": \"\",
+  \"partition_desc\": {
+    \"partition_date_column\": \"KYL_MQB_DEF.DEF_DATE_VALIDATION\",
+    \"partition_time_column\": null,
+    \"partition_date_start\": 0,
+    \"partition_date_format\": \"yyyy-MM-dd\",
+    \"partition_time_format\": \"HH:mm:ss\",
+    \"partition_type\": \"APPEND\",
+    \"partition_condition_builder\": \"org.apache.kylin.metadata.model.PartitionDesc$DefaultPartitionConditionBuilder\"
+  },
+  \"capacity\": \"MEDIUM\"
+}",
+  "successful": true,
+  "message": null,
+  "project": "prod_mqb_usb",
+  "ccInCheck": null,
+  "seekingExprAdvice": false
+}

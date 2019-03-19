@@ -1,0 +1,451 @@
+{
+  "cubeName": "CUBE_MQB_OPV_DDP",
+  "project": "prod_mqb_usb",
+  "cubeDescData": "{
+  \"name\": \"CUBE_MQB_OPV_DPP\",
+  \"is_draft\": false,
+  \"model_name\": \"MODEL_MQB_OPV_DPP\",
+  \"description\": \"\",
+  \"null_string\": null,
+  \"dimensions\": [
+    {
+      \"name\": \"MDL_NUM_MODEL_R3\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"MDL_NUM_MODEL_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"COUNTRY_REFERENCE\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"COUNTRY_REFERENCE\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"NOTE_BIS\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"NOTE_BIS\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"COLLABORATOR\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"COLLABORATOR\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DAY_PUBLISHED_AT\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"DAY_PUBLISHED_AT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"WEEK_PUBLISHED_AT\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"WEEK_PUBLISHED_AT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"MONTH_PUBLISHED_AT\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"MONTH_PUBLISHED_AT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"YEAR_PUBLISHED_AT\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"YEAR_PUBLISHED_AT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"PURCH_ORG\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"PURCH_ORG\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"PURCH_ORG_TEXT\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"PURCH_ORG_TEXT\",
+      \"derived\": null
+    },
+      {
+      \"name\": \"SALES_ORG\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"SALES_ORG\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SALES_ORG_TEXT\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"SALES_ORG_TEXT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"VENDOR_ID\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"VENDOR_ID\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SUBCONTRACTOR_ID\",
+      \"table\": \"KYL_MQB_OPV\",
+      \"column\": \"SUBCONTRACTOR_ID\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"VENDOR\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"VENDOR\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SUBDPDPP\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"SUBDPDPP\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SUBDPLIB\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"SUBDPLIB\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SECTORDPP\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"SECTORDPP\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SECTORLIB\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"SECTORLIB\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"FAMILYDPP\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"FAMILYDPP\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"FAMILYLIB\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"FAMILYLIB\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DEPTDPP\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"DEPTDPP\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DEPTLIB\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"DEPTLIB\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"RT_CONFMAT\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"RT_CONFMAT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_MODELE\",
+      \"table\": \"DPP_HIERARCHIE_MODELE\",
+      \"column\": \"LIBELLE_MODELE\",
+      \"derived\": null
+    }
+  ],
+  \"measures\": [
+    {
+      \"name\": \"_COUNT_\",
+      \"function\": {
+        \"expression\": \"COUNT\",
+        \"parameter\": {
+          \"type\": \"constant\",
+          \"value\": \"1\"
+        },
+        \"returntype\": \"bigint\"
+      }
+    },
+    {
+      \"name\": \"SUM_NOTE\",
+      \"function\": {
+        \"expression\": \"SUM\",
+        \"parameter\": {
+          \"type\": \"column\",
+          \"value\": \"KYL_MQB_OPV.NOTE\"
+        },
+        \"returntype\": \"bigint\"
+      }
+    }
+  ],
+  \"dictionaries\": [],
+  \"rowkey\": {
+    \"rowkey_columns\": [
+      {
+        \"column\": \"KYL_MQB_OPV.YEAR_PUBLISHED_AT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.MONTH_PUBLISHED_AT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.WEEK_PUBLISHED_AT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.DAY_PUBLISHED_AT\",
+        \"encoding\": \"time\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.SECTORDPP\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.SECTORLIB\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.DEPTDPP\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.DEPTLIB\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.SUBDPDPP\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.SUBDPLIB\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.FAMILYDPP\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.FAMILYLIB\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.RT_CONFMAT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.LIBELLE_MODELE\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.MDL_NUM_MODEL_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": true
+      },
+      {
+        \"column\": \"DPP_HIERARCHIE_MODELE.VENDOR\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.VENDOR_ID\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.SUBCONTRACTOR_ID\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.PURCH_ORG\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.PURCH_ORG_TEXT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.SALES_ORG\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.SALES_ORG_TEXT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.COUNTRY_REFERENCE\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.NOTE_BIS\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_OPV.COLLABORATOR\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      }
+    ]
+  },
+  \"hbase_mapping\": {
+    \"column_family\": [
+      {
+        \"name\": \"F1\",
+        \"columns\": [
+          {
+            \"qualifier\": \"M\",
+            \"measure_refs\": [
+              \"_COUNT_\",
+              \"SUM_NOTE\"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  \"aggregation_groups\": [
+    {
+      \"includes\": [
+        \"KYL_MQB_OPV.MDL_NUM_MODEL_R3\",
+        \"KYL_MQB_OPV.COUNTRY_REFERENCE\",
+        \"KYL_MQB_OPV.NOTE_BIS\",
+        \"KYL_MQB_OPV.COLLABORATOR\",
+        \"KYL_MQB_OPV.DAY_PUBLISHED_AT\",
+        \"KYL_MQB_OPV.WEEK_PUBLISHED_AT\",
+        \"KYL_MQB_OPV.MONTH_PUBLISHED_AT\",
+        \"KYL_MQB_OPV.YEAR_PUBLISHED_AT\",
+        \"KYL_MQB_OPV.PURCH_ORG\",
+        \"KYL_MQB_OPV.PURCH_ORG_TEXT\",
+        \"KYL_MQB_OPV.SALES_ORG\",
+        \"KYL_MQB_OPV.SALES_ORG_TEXT\",
+        \"KYL_MQB_OPV.VENDOR_ID\",
+        \"KYL_MQB_OPV.SUBCONTRACTOR_ID\",
+        \"DPP_HIERARCHIE_MODELE.VENDOR\",
+        \"DPP_HIERARCHIE_MODELE.SUBDPDPP\",
+        \"DPP_HIERARCHIE_MODELE.SUBDPLIB\",
+        \"DPP_HIERARCHIE_MODELE.SECTORDPP\",
+        \"DPP_HIERARCHIE_MODELE.SECTORLIB\",
+        \"DPP_HIERARCHIE_MODELE.FAMILYDPP\",
+        \"DPP_HIERARCHIE_MODELE.FAMILYLIB\",
+        \"DPP_HIERARCHIE_MODELE.DEPTDPP\",
+        \"DPP_HIERARCHIE_MODELE.DEPTLIB\",
+        \"DPP_HIERARCHIE_MODELE.RT_CONFMAT\",
+        \"DPP_HIERARCHIE_MODELE.LIBELLE_MODELE\"
+      ],
+      \"select_rule\": {
+        \"hierarchy_dims\": [
+          [
+            \"KYL_MQB_OPV.YEAR_PUBLISHED_AT\",
+            \"KYL_MQB_OPV.MONTH_PUBLISHED_AT\",
+            \"KYL_MQB_OPV.WEEK_PUBLISHED_AT\",
+            \"KYL_MQB_OPV.DAY_PUBLISHED_AT\"
+          ],
+          [
+            \"DPP_HIERARCHIE_MODELE.SECTORDPP\",
+            \"DPP_HIERARCHIE_MODELE.DEPTDPP\",
+            \"DPP_HIERARCHIE_MODELE.SUBDPDPP\",
+            \"DPP_HIERARCHIE_MODELE.FAMILYDPP\"
+          ],
+          [
+            \"DPP_HIERARCHIE_MODELE.SECTORLIB\",
+            \"DPP_HIERARCHIE_MODELE.DEPTLIB\",
+            \"DPP_HIERARCHIE_MODELE.SUBDPLIB\",
+            \"DPP_HIERARCHIE_MODELE.FAMILYLIB\",
+            \"DPP_HIERARCHIE_MODELE.LIBELLE_MODELE\"
+          ]
+        ],
+        \"mandatory_dims\": [
+          \"KYL_MQB_OPV.MDL_NUM_MODEL_R3\",
+          \"KYL_MQB_OPV.VENDOR_ID\",
+          \"DPP_HIERARCHIE_MODELE.VENDOR\",
+          \"DPP_HIERARCHIE_MODELE.RT_CONFMAT\"
+        ],
+        \"joint_dims\": [
+          [
+            \"KYL_MQB_OPV.COUNTRY_REFERENCE\",
+            \"KYL_MQB_OPV.NOTE_BIS\",
+            \"KYL_MQB_OPV.COLLABORATOR\",
+            \"KYL_MQB_OPV.PURCH_ORG\",
+            \"KYL_MQB_OPV.PURCH_ORG_TEXT\",
+            \"KYL_MQB_OPV.SALES_ORG\",
+            \"KYL_MQB_OPV.SALES_ORG_TEXT\",
+            \"KYL_MQB_OPV.SUBCONTRACTOR_ID\"
+          ]
+        ]
+      }
+    }
+  ],
+  \"signature\": \"kWuhY1xnwjV+d00K2EtvJQ==\",
+  \"notify_list\": [],
+  \"status_need_notify\": [
+    \"ERROR\",
+    \"DISCARDED\",
+    \"SUCCEED\"
+  ],
+  \"partition_date_start\": 0,
+  \"partition_date_end\": 3153600000000,
+  \"auto_merge_time_ranges\": [
+    604800000,
+    2419200000
+  ],
+  \"volatile_range\": 0,
+  \"retention_range\": 0,
+  \"engine_type\": 2,
+  \"storage_type\": 2,
+  \"override_kylin_properties\": {},
+  \"cuboid_black_list\": [],
+  \"parent_forward\": 3,
+  \"mandatory_dimension_set_list\": [],
+  \"snapshot_table_desc_list\": []
+}"}

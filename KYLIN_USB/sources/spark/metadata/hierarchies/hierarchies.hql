@@ -1,0 +1,9 @@
+ANALYZE TABLE kylin_usb_mqb.dmi_hierarchie_article COMPUTE STATISTICS;
+ANALYZE TABLE kylin_usb_mqb.dmi_hierarchie_modele COMPUTE STATISTICS;
+ANALYZE TABLE kylin_usb_mqb.magasin_hierarchie_article COMPUTE STATISTICS;
+ANALYZE TABLE kylin_usb_mqb.magasin_hierarchie_modele COMPUTE STATISTICS;
+ANALYZE TABLE kylin_usb_mqb.produit_hierarchie_article COMPUTE STATISTICS;
+ANALYZE TABLE kylin_usb_mqb.produit_hierarchie_modele COMPUTE STATISTICS;
+ANALYZE TABLE kylin_usb_mqb.nature_produit_hierarchie_article COMPUTE STATISTICS;
+ANALYZE TABLE kylin_usb_mqb.nature_produit_hierarchie_modele COMPUTE STATISTICS;
+

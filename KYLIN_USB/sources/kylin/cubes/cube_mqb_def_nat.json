@@ -1,0 +1,547 @@
+{
+  "cubeName": "CUBE_MQB_DEF_NAT",
+  "project": "prod_mqb_usb",
+  "cubeDescData": "{
+  \"name\": \"CUBE_MQB_DEF_NAT\",
+  \"is_draft\": false,
+  \"model_name\": \"MODEL_MQB_DEF_NAT\",
+  \"description\": \"\",
+  \"null_string\": null,
+  \"dimensions\": [
+    {
+      \"name\": \"SKU_NUM_SKU_R3\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"SKU_NUM_SKU_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"MDL_NUM_MODEL_R3\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"MDL_NUM_MODEL_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DEF_DATE_VALIDATION\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"DEF_DATE_VALIDATION\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DFT_CODE_DFT\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"DFT_CODE_DFT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DEF_TYPE\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"DEF_TYPE\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LOC_CODE_LOC\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"LOC_CODE_LOC\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DEF_IS_DECATHLON\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"DEF_IS_DECATHLON\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"MONTH_TDT_DATE_TRANSACTION\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"MONTH_TDT_DATE_TRANSACTION\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"YEAR_TDT_DATE_TRANSACTION\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"YEAR_TDT_DATE_TRANSACTION\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"WEEK_TDT_DATE_TRANSACTION\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"WEEK_TDT_DATE_TRANSACTION\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LABEL_DEFECT\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"LABEL_DEFECT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LABEL_LOC\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"LABEL_LOC\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"PURCH_ORG\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"PURCH_ORG\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"PURCH_ORG_TEXT\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"PURCH_ORG_TEXT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SALES_ORG\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"SALES_ORG\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SALES_ORG_TEXT\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"SALES_ORG_TEXT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"DISTRIB_CHANNEL\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"DISTRIB_CHANNEL\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"PLANT\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"PLANT\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"VENDOR_ID\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"VENDOR_ID\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"SUBCONTRACTOR_ID\",
+      \"table\": \"KYL_MQB_DEF\",
+      \"column\": \"SUBCONTRACTOR_ID\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"FST_ARTICLE_R3\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"FST_ARTICLE_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"FST_MODELE_R3\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"FST_MODELE_R3\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_FAM\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_FAM\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_SSR\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_SSR\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_RAY\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_RAY\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"ELN_NUM_ELT_NIVEAU_UNI\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"ELN_NUM_ELT_NIVEAU_UNI\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_MODELE\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_MODELE\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_FAMILLE\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_FAMILLE\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_SOUS_RAYON\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_SOUS_RAYON\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_RAYON\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_RAYON\",
+      \"derived\": null
+    },
+    {
+      \"name\": \"LIBELLE_UNIVERS\",
+      \"table\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE\",
+      \"column\": \"LIBELLE_UNIVERS\",
+      \"derived\": null
+    }
+  ],
+  \"measures\": [
+    {
+      \"name\": \"_COUNT_\",
+      \"function\": {
+        \"expression\": \"COUNT\",
+        \"parameter\": {
+          \"type\": \"constant\",
+          \"value\": \"1\"
+        },
+        \"returntype\": \"bigint\"
+      }
+    },
+    {
+      \"name\": \"SUM_QTE\",
+      \"function\": {
+        \"expression\": \"SUM\",
+        \"parameter\": {
+          \"type\": \"column\",
+          \"value\": \"KYL_MQB_DEF.DEF_QUANTITE\"
+        },
+        \"returntype\": \"double\"
+      }
+    },
+    {
+      \"name\": \"SUM_PRICE_CESSION\",
+      \"function\": {
+        \"expression\": \"SUM\",
+        \"parameter\": {
+          \"type\": \"column\",
+          \"value\": \"KYL_MQB_DEF.PRICE_CESSION\"
+        },
+        \"returntype\": \"double\"
+      }
+    }
+  ],
+  \"dictionaries\": [],
+  \"rowkey\": {
+    \"rowkey_columns\": [
+      {
+        \"column\": \"KYL_MQB_DEF.YEAR_TDT_DATE_TRANSACTION\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.MONTH_TDT_DATE_TRANSACTION\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.WEEK_TDT_DATE_TRANSACTION\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.DEF_DATE_VALIDATION\",
+        \"encoding\": \"date\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_UNI\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_UNIVERS\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_RAY\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_RAYON\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_SSR\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_SOUS_RAYON\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_FAM\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_FAMILLE\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.FST_MODELE_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_MODELE\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.MDL_NUM_MODEL_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.FST_ARTICLE_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.SKU_NUM_SKU_R3\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": true
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.VENDOR_ID\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.SUBCONTRACTOR_ID\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.PLANT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.PURCH_ORG\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.PURCH_ORG_TEXT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.SALES_ORG_TEXT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.SALES_ORG\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.LOC_CODE_LOC\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.LABEL_LOC\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.DFT_CODE_DFT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.LABEL_DEFECT\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.DEF_TYPE\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.DEF_IS_DECATHLON\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      },
+      {
+        \"column\": \"KYL_MQB_DEF.DISTRIB_CHANNEL\",
+        \"encoding\": \"dict\",
+        \"encoding_version\": 1,
+        \"isShardBy\": false
+      }
+    ]
+  },
+  \"hbase_mapping\": {
+    \"column_family\": [
+      {
+        \"name\": \"F1\",
+        \"columns\": [
+          {
+            \"qualifier\": \"M\",
+            \"measure_refs\": [
+              \"_COUNT_\",
+              \"SUM_QTE\",
+              \"SUM_PRICE_CESSION\"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  \"aggregation_groups\": [
+    {
+      \"includes\": [
+        \"KYL_MQB_DEF.SKU_NUM_SKU_R3\",
+        \"KYL_MQB_DEF.MDL_NUM_MODEL_R3\",
+        \"KYL_MQB_DEF.DEF_DATE_VALIDATION\",
+        \"KYL_MQB_DEF.DFT_CODE_DFT\",
+        \"KYL_MQB_DEF.DEF_TYPE\",
+        \"KYL_MQB_DEF.LOC_CODE_LOC\",
+        \"KYL_MQB_DEF.DEF_IS_DECATHLON\",
+        \"KYL_MQB_DEF.MONTH_TDT_DATE_TRANSACTION\",
+        \"KYL_MQB_DEF.YEAR_TDT_DATE_TRANSACTION\",
+        \"KYL_MQB_DEF.WEEK_TDT_DATE_TRANSACTION\",
+        \"KYL_MQB_DEF.LABEL_DEFECT\",
+        \"KYL_MQB_DEF.LABEL_LOC\",
+        \"KYL_MQB_DEF.PURCH_ORG\",
+        \"KYL_MQB_DEF.PURCH_ORG_TEXT\",
+        \"KYL_MQB_DEF.SALES_ORG\",
+        \"KYL_MQB_DEF.SALES_ORG_TEXT\",
+        \"KYL_MQB_DEF.DISTRIB_CHANNEL\",
+        \"KYL_MQB_DEF.PLANT\",
+        \"KYL_MQB_DEF.VENDOR_ID\",
+        \"KYL_MQB_DEF.SUBCONTRACTOR_ID\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.FST_ARTICLE_R3\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.FST_MODELE_R3\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_FAM\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_SSR\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_RAY\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_UNI\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_MODELE\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_FAMILLE\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_SOUS_RAYON\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_RAYON\",
+        \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_UNIVERS\"
+      ],
+      \"select_rule\": {
+        \"hierarchy_dims\": [
+          [
+            \"KYL_MQB_DEF.YEAR_TDT_DATE_TRANSACTION\",
+            \"KYL_MQB_DEF.MONTH_TDT_DATE_TRANSACTION\",
+            \"KYL_MQB_DEF.WEEK_TDT_DATE_TRANSACTION\",
+            \"KYL_MQB_DEF.DEF_DATE_VALIDATION\"
+          ],
+          [
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_UNIVERS\",
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_RAYON\",
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_SOUS_RAYON\",
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_FAMILLE\",
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.LIBELLE_MODELE\"
+          ],
+          [
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_UNI\",
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_RAY\",
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_SSR\",
+            \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.ELN_NUM_ELT_NIVEAU_FAM\"
+          ]
+        ],
+        \"mandatory_dims\": [
+          \"KYL_MQB_DEF.SKU_NUM_SKU_R3\",
+          \"KYL_MQB_DEF.MDL_NUM_MODEL_R3\",
+          \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.FST_ARTICLE_R3\",
+          \"NATURE_PRODUIT_HIERARCHIE_ARTICLE.FST_MODELE_R3\"
+        ],
+        \"joint_dims\": [
+          [
+            \"KYL_MQB_DEF.DFT_CODE_DFT\",
+            \"KYL_MQB_DEF.DEF_TYPE\",
+            \"KYL_MQB_DEF.LOC_CODE_LOC\",
+            \"KYL_MQB_DEF.DEF_IS_DECATHLON\",
+            \"KYL_MQB_DEF.LABEL_DEFECT\",
+            \"KYL_MQB_DEF.LABEL_LOC\",
+            \"KYL_MQB_DEF.PURCH_ORG\",
+            \"KYL_MQB_DEF.PURCH_ORG_TEXT\",
+            \"KYL_MQB_DEF.SALES_ORG\",
+            \"KYL_MQB_DEF.SALES_ORG_TEXT\",
+            \"KYL_MQB_DEF.DISTRIB_CHANNEL\",
+            \"KYL_MQB_DEF.PLANT\",
+            \"KYL_MQB_DEF.VENDOR_ID\",
+            \"KYL_MQB_DEF.SUBCONTRACTOR_ID\"
+          ]
+        ]
+      }
+    }
+  ],
+  \"signature\": \"7nM737/4lUxostgHdT5iUw==\",
+  \"notify_list\": [],
+  \"status_need_notify\": [
+    \"ERROR\",
+    \"DISCARDED\",
+    \"SUCCEED\"
+  ],
+  \"partition_date_start\": 0,
+  \"partition_date_end\": 3153600000000,
+  \"auto_merge_time_ranges\": [
+    604800000,
+    2419200000
+  ],
+  \"volatile_range\": 0,
+  \"retention_range\": 0,
+  \"engine_type\": 2,
+  \"storage_type\": 2,
+  \"override_kylin_properties\": {},
+  \"cuboid_black_list\": [],
+  \"parent_forward\": 3,
+  \"mandatory_dimension_set_list\": [],
+  \"snapshot_table_desc_list\": []
+}"}

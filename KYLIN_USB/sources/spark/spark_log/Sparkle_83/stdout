@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/hadoop/KYLIN_USB/sources/spark/load/cubes/kyl_mqb_vte.py", line 143, in <module>
+    .withColumn("month_transaction", F.month(ft.tdt_date_transaction).cast(T.StringType)) \
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/column.py", line 545, in cast
+TypeError: unexpected type: <class 'pyspark.sql.types.DataTypeSingleton'>

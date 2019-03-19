@@ -1,0 +1,45 @@
+#Ordonancement logique d'une session de calcul [KYLIN-USB]
+#Init EMR (Avec CoreSpot Nodes)
+#EMR Steps Install Requirements (Python36,Apache Kylin)
+#Git clone repo
+------A ce moment, Kylin est installé et les deux clusters sont connectés.
+#Execute Brain.py
+1) Test d'architecture Kylin:
+	=> Il y'a t'il le projet "prod_mqb_usb" ?
+		1)a) si oui :
+				=> Il y'a t'il tous les cubes de présents dans le projet.
+					si oui :
+						go to 2)
+					si non :
+						go to 1)b)
+		1)b) si non :
+				=> créé le projet "prod_mqb_usb"
+				                Exemple requests:
+				                curl -XPOST  --user ADMIN:KYLIN  http://127.0.0.1:7070/kylin/api/projects
+				                 -H "Content-Type: application/json"
+				                 -d @/home/hadoop/deploiement_prod/data/modelisation/projet/projet.json
+				=> data_prep_refresh()
+				=> load_or_refresh_kylin_tables()
+				                Exemple requests:
+				                curl -XPOST  --user admin:KYLIN
+				                http://127.0.0.1:7070/kylin/api/tables/KYLIN_USB_MQB.KYL_MQB_VTE,KYLIN_USB_MQB.KYL_MQB_DEF/dev_mqb_usb
+				                -H "Content-Type: application/json"
+				                -d @/home/hadoop/deploiement_prod/data/modelisation/data_source/cardinality.json
+				=> load_models_jsons()
+				=> load_cubes_json()
+				=> check_maj_cubes()
+				=> build_cubes()
+				    (build les 20 cubes depuis 2017-01-01 jusqu'à instant T)
+
+
+2) Quelle jour de la semaine sommes nous ?
+	2)a) si weekday != 3 :
+			=> data_prep_increment()
+			=> cube_compute_increment()
+				(reconnait le dernier segment calculé et build le delta entre celui-ci et l'instant de calcul)
+	2)b) si weekday == 3 :
+			=> data_prep_refresh()
+			=> load_or_refresh_kylin_tables()
+				(rafraichi les tables d'entrée pour Kylin)
+			=> cube_compute_refresh()
+				(purge + build depuis 2017-01-01 jusqu'à instant T)

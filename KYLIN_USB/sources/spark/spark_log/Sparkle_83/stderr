@@ -1,0 +1,194 @@
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /stderr (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.DailyRollingFileAppender.activateOptions(DailyRollingFileAppender.java:223)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.parseCatsAndRenderers(PropertyConfigurator.java:672)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:516)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.apache.spark.internal.Logging$class.initializeLogging(Logging.scala:120)
+	at org.apache.spark.internal.Logging$class.initializeLogIfNecessary(Logging.scala:108)
+	at org.apache.spark.deploy.SparkSubmit$.initializeLogIfNecessary(SparkSubmit.scala:71)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:128)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+log4j:ERROR Either File or DatePattern options are not set for appender [DRFA-stderr].
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /stdout (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.DailyRollingFileAppender.activateOptions(DailyRollingFileAppender.java:223)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.parseCatsAndRenderers(PropertyConfigurator.java:672)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:516)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.apache.spark.internal.Logging$class.initializeLogging(Logging.scala:120)
+	at org.apache.spark.internal.Logging$class.initializeLogIfNecessary(Logging.scala:108)
+	at org.apache.spark.deploy.SparkSubmit$.initializeLogIfNecessary(SparkSubmit.scala:71)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:128)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+log4j:ERROR Either File or DatePattern options are not set for appender [DRFA-stdout].
+19/03/11 17:19:17 INFO SparkContext: Running Spark version 2.3.2
+19/03/11 17:19:17 INFO SparkContext: Submitted application: ALIM_KYL_VTE_2018_02
+19/03/11 17:19:17 INFO SecurityManager: Changing view acls to: hadoop
+19/03/11 17:19:17 INFO SecurityManager: Changing modify acls to: hadoop
+19/03/11 17:19:17 INFO SecurityManager: Changing view acls groups to: 
+19/03/11 17:19:17 INFO SecurityManager: Changing modify acls groups to: 
+19/03/11 17:19:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+19/03/11 17:19:17 INFO Utils: Successfully started service 'sparkDriver' on port 33783.
+19/03/11 17:19:18 INFO SparkEnv: Registering MapOutputTracker
+19/03/11 17:19:18 INFO SparkEnv: Registering BlockManagerMaster
+19/03/11 17:19:18 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/03/11 17:19:18 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/03/11 17:19:18 INFO DiskBlockManager: Created local directory at /mnt/tmp/blockmgr-1ef93452-ffb6-454a-bf20-ff3c13ea70c1
+19/03/11 17:19:18 INFO MemoryStore: MemoryStore started with capacity 2.8 GB
+19/03/11 17:19:18 INFO SparkEnv: Registering OutputCommitCoordinator
+19/03/11 17:19:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+19/03/11 17:19:18 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+19/03/11 17:19:18 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+19/03/11 17:19:18 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+19/03/11 17:19:18 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+19/03/11 17:19:18 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://ip-10-0-76-67.eu-west-1.compute.internal:4044
+19/03/11 17:19:18 INFO Utils: Using initial executors = 2, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/03/11 17:19:19 INFO RMProxy: Connecting to ResourceManager at ip-10-0-76-67.eu-west-1.compute.internal/10.0.76.67:8032
+19/03/11 17:19:20 INFO Client: Requesting a new application from cluster with 20 NodeManagers
+19/03/11 17:19:20 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (116736 MB per container)
+19/03/11 17:19:20 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+19/03/11 17:19:20 INFO Client: Setting up container launch context for our AM
+19/03/11 17:19:20 INFO Client: Setting up the launch environment for our AM container
+19/03/11 17:19:20 INFO Client: Preparing resources for our AM container
+19/03/11 17:19:21 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+19/03/11 17:19:24 INFO Client: Uploading resource file:/mnt/tmp/spark-fbc4047f-a027-406d-892a-6bd5d6a92901/__spark_libs__524391767552733194.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0296/__spark_libs__524391767552733194.zip
+19/03/11 17:19:25 INFO Client: Uploading resource file:/etc/spark/conf/hive-site.xml -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0296/hive-site.xml
+19/03/11 17:19:26 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/pyspark.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0296/pyspark.zip
+19/03/11 17:19:26 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/py4j-0.10.7-src.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0296/py4j-0.10.7-src.zip
+19/03/11 17:19:26 INFO Client: Uploading resource file:/mnt/tmp/spark-fbc4047f-a027-406d-892a-6bd5d6a92901/__spark_conf__6711452161098626673.zip -> hdfs://ip-10-0-76-67.eu-west-1.compute.internal:8020/user/hadoop/.sparkStaging/application_1552302308810_0296/__spark_conf__.zip
+19/03/11 17:19:26 INFO SecurityManager: Changing view acls to: hadoop
+19/03/11 17:19:26 INFO SecurityManager: Changing modify acls to: hadoop
+19/03/11 17:19:26 INFO SecurityManager: Changing view acls groups to: 
+19/03/11 17:19:26 INFO SecurityManager: Changing modify acls groups to: 
+19/03/11 17:19:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+19/03/11 17:19:26 INFO Client: Submitting application application_1552302308810_0296 to ResourceManager
+19/03/11 17:19:26 INFO YarnClientImpl: Submitted application application_1552302308810_0296
+19/03/11 17:19:26 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1552302308810_0296 and attemptId None
+19/03/11 17:19:27 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:27 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1552324766355
+	 final status: UNDEFINED
+	 tracking URL: http://ip-10-0-76-67.eu-west-1.compute.internal:20888/proxy/application_1552302308810_0296/
+	 user: hadoop
+19/03/11 17:19:28 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:29 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:30 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:31 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:32 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:33 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:34 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:35 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:36 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:37 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:38 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:39 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:40 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:41 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:42 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:43 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:44 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:45 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:46 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:47 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:48 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:48 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> ip-10-0-76-67.eu-west-1.compute.internal, PROXY_URI_BASES -> http://ip-10-0-76-67.eu-west-1.compute.internal:20888/proxy/application_1552302308810_0296), /proxy/application_1552302308810_0296
+19/03/11 17:19:48 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /jobs, /jobs/json, /jobs/job, /jobs/job/json, /stages, /stages/json, /stages/stage, /stages/stage/json, /stages/pool, /stages/pool/json, /storage, /storage/json, /storage/rdd, /storage/rdd/json, /environment, /environment/json, /executors, /executors/json, /executors/threadDump, /executors/threadDump/json, /static, /, /api, /jobs/job/kill, /stages/stage/kill.
+19/03/11 17:19:49 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:50 INFO Client: Application report for application_1552302308810_0296 (state: ACCEPTED)
+19/03/11 17:19:51 INFO Client: Application report for application_1552302308810_0296 (state: RUNNING)
+19/03/11 17:19:51 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.76.49
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1552324766355
+	 final status: UNDEFINED
+	 tracking URL: http://ip-10-0-76-67.eu-west-1.compute.internal:20888/proxy/application_1552302308810_0296/
+	 user: hadoop
+19/03/11 17:19:51 INFO YarnClientSchedulerBackend: Application application_1552302308810_0296 has started running.
+19/03/11 17:19:51 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40837.
+19/03/11 17:19:51 INFO NettyBlockTransferService: Server created on ip-10-0-76-67.eu-west-1.compute.internal:40837
+19/03/11 17:19:51 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/03/11 17:19:51 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 40837, None)
+19/03/11 17:19:51 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-0-76-67.eu-west-1.compute.internal:40837 with 2.8 GB RAM, BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 40837, None)
+19/03/11 17:19:51 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 40837, None)
+19/03/11 17:19:51 INFO BlockManager: external shuffle service port = 7337
+19/03/11 17:19:51 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-0-76-67.eu-west-1.compute.internal, 40837, None)
+19/03/11 17:19:51 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+19/03/11 17:19:51 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+19/03/11 17:19:51 INFO EventLoggingListener: Logging events to hdfs:/var/log/spark/apps/application_1552302308810_0296
+19/03/11 17:19:51 INFO Utils: Using initial executors = 2, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+19/03/11 17:19:52 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000(ms)
+19/03/11 17:19:52 INFO SharedState: loading hive config file: file:/etc/spark/conf.dist/hive-site.xml
+19/03/11 17:19:52 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('hdfs:///user/spark/warehouse').
+19/03/11 17:19:52 INFO SharedState: Warehouse path is 'hdfs:///user/spark/warehouse'.
+19/03/11 17:19:52 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL.
+19/03/11 17:19:52 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/json.
+19/03/11 17:19:52 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution.
+19/03/11 17:19:52 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution/json.
+19/03/11 17:19:52 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /static/sql.
+19/03/11 17:19:52 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/03/11 17:19:53 INFO HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+19/03/11 17:19:53 INFO metastore: Trying to connect to metastore with URI thrift://ip-10-0-76-67.eu-west-1.compute.internal:9083
+19/03/11 17:19:53 INFO metastore: Connected to metastore.
+19/03/11 17:19:53 INFO SessionState: Created local directory: /tmp/178c1983-1b50-4f8d-b1f6-96d706cd025e_resources
+19/03/11 17:19:53 INFO SessionState: Created HDFS directory: /tmp/hive/hadoop/178c1983-1b50-4f8d-b1f6-96d706cd025e
+19/03/11 17:19:53 INFO SessionState: Created local directory: /tmp/hadoop/178c1983-1b50-4f8d-b1f6-96d706cd025e
+19/03/11 17:19:53 INFO SessionState: Created HDFS directory: /tmp/hive/hadoop/178c1983-1b50-4f8d-b1f6-96d706cd025e/_tmp_space.db
+19/03/11 17:19:53 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is hdfs:///user/spark/warehouse
+19/03/11 17:19:58 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.76.150:59164) with ID 1
+19/03/11 17:19:58 INFO ExecutorAllocationManager: New executor 1 has registered (new total is 1)
+19/03/11 17:19:58 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-0-76-150.eu-west-1.compute.internal:38053 with 3.4 GB RAM, BlockManagerId(1, ip-10-0-76-150.eu-west-1.compute.internal, 38053, None)
+19/03/11 17:19:59 INFO SparkContext: Invoking stop() from shutdown hook
+19/03/11 17:19:59 INFO SparkUI: Stopped Spark web UI at http://ip-10-0-76-67.eu-west-1.compute.internal:4044
+19/03/11 17:19:59 INFO YarnClientSchedulerBackend: Interrupting monitor thread
+19/03/11 17:19:59 INFO YarnClientSchedulerBackend: Shutting down all executors
+19/03/11 17:19:59 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+19/03/11 17:19:59 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+19/03/11 17:19:59 INFO YarnClientSchedulerBackend: Stopped
+19/03/11 17:19:59 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/03/11 17:19:59 INFO MemoryStore: MemoryStore cleared
+19/03/11 17:19:59 INFO BlockManager: BlockManager stopped
+19/03/11 17:19:59 INFO BlockManagerMaster: BlockManagerMaster stopped
+19/03/11 17:19:59 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/03/11 17:19:59 INFO SparkContext: Successfully stopped SparkContext
+19/03/11 17:19:59 INFO ShutdownHookManager: Shutdown hook called
+19/03/11 17:19:59 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-fbc4047f-a027-406d-892a-6bd5d6a92901
+19/03/11 17:19:59 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-fbc4047f-a027-406d-892a-6bd5d6a92901/pyspark-3a9851e5-304a-4376-9824-98397217c223
+19/03/11 17:19:59 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-96e6bc30-251d-4173-9d76-35ee3bcb9f90

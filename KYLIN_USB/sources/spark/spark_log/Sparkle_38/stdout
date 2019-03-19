@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/hadoop/KYLIN_USB/sources/spark/load/cubes/kyl_mqb_opv.py", line 66, in <module>
+    opv = opv.withColumn("day_published_at", day(opv["day_published_at"]))
+NameError: name 'day' is not defined
