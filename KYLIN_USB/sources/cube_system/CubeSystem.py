@@ -7,11 +7,9 @@ import time
 from os import listdir
 from os.path import isfile, join
 
-from KYLIN_USB.sources.cube_system.KylinClient import build_parallelized, refresh_with_purge_parallelized, \
-    refresh_with_purge, launch_build, time_to_unix, latest_date, LOGGER
-from KYLIN_USB.sources.cube_system.global_variables import KylinProperties
-from KYLIN_USB.sources.run.global_variables import AUTH
-from KYLIN_USB.sources.tests.generate_model import HOSTNAME, HEADERS
+from KylinClient import build_parallelized, refresh_with_purge_parallelized, refresh_with_purge, launch_build, time_to_unix, latest_date, LOGGER
+from global_variables import KylinProperties
+from global_variables import AUTH,HOSTNAME,HEADERS
 
 
 class CubeSystem(object):
@@ -79,7 +77,7 @@ class CubeSystem(object):
         url="http://"+HOSTNAME+":7070/kylin/api/models/"+model_name
         request_delete=requests.delete(url=url,headers=HEADERS,auth=AUTH)
         if not request_delete.ok:
-            LOGGER.error(json.loads(request_delete)["msg"])
+            LOGGER.error(json.loads(request_delete)["msg"]);
         else:
             LOGGER.info("deleting model "+model_name+" successful")
 

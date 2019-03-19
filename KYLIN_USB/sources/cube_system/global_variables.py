@@ -1,13 +1,13 @@
 
 
-class KylinProperties(object):
-    HEADERS = {'Content-type': 'application/json'}
-    HOSTNAME = "127.0.0.1"
-    AUTH = ("admin", "KYLIN")
-    KYLIN_DIRECTORY = "/opt/kylin/"
 
 
 SIZE_POOL = 5
+
+HEADERS = {'Content-type': 'application/json'}
+HOSTNAME = "127.0.0.1"
+AUTH = ("admin", "KYLIN")
+KYLIN_DIRECTORY = "/opt/kylin/"
 
 
 class LoggerProperties(object):
