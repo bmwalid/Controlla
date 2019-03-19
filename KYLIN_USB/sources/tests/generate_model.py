@@ -11,7 +11,7 @@ from os.path import join, isfile
 
 import requests
 
-from KYLIN_USB.sources.cube_system.CubeSystem import CubeSystem
+import KYLIN_USB.sources.cube_system.CubeSystem as cs
 
 AUTH=("admin","KYLIN")
 HEADERS = {'Content-type': 'application/json'}
@@ -20,7 +20,7 @@ class generate_model(unittest.TestCase):
     path=r"template_model_envelope.json"
     path_2=r"model_json.json"
     def test_open_folder(self):
-        c=CubeSystem()
+        c=cs.CubeSystem(3)
         models_files_json = [f for f in listdir(c.models_json_folder) if isfile(join(c.models_json_folder, f))]
 
 
